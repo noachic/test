@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<s:WindowedApplication xmlns:fx="http://ns.adobe.com/mxml/2009"
+<s:WindowedApplication xmlns:configuration="com.cp.configuration.*"
+					   xmlns:fx="http://ns.adobe.com/mxml/2009"
 					   xmlns:mx="library://ns.adobe.com/flex/mx"
 					   xmlns:s="library://ns.adobe.com/flex/spark"
 					   >
 	<fx:Declarations>
-		<!-- Place non-visual elements (e.g., services, value objects) here -->
+		<configuration:MainContextBuilder viewRoot="{this}"/>
 	</fx:Declarations>
 </s:WindowedApplication>
