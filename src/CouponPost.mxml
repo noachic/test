@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<s:WindowedApplication xmlns:configuration="com.cp.configuration.*"
+<s:WindowedApplication showStatusBar="false"
+					   xmlns:configuration="com.cp.configuration.*"
 					   xmlns:fx="http://ns.adobe.com/mxml/2009"
 					   xmlns:mx="library://ns.adobe.com/flex/mx"
+					   xmlns:parsley="http://www.spicefactory.org/parsley"
 					   xmlns:s="library://ns.adobe.com/flex/spark"
 					   xmlns:view="com.cp.view.*"
 					   >
+
+	<fx:Style source="style/global.css" />
+	<fx:Style source="style/containers.css" />
+
+	<fx:Script>
+		<![CDATA[
+			import mx.controls.Alert;
+		]]>
+	</fx:Script>
+
 	<fx:Declarations>
 		<configuration:MainContextBuilder viewRoot="{this}" />
+		<parsley:Configure />
 	</fx:Declarations>
+
+	<s:BitmapImage source="@Embed('/asset/background.png')"
+				   fillMode="repeat"
+				   />
 
 	<view:MainView left="0"
 				   right="0"

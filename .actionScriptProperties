@@ -17,6 +17,9 @@
     <application path="CouponPost.mxml">
       <airExcludes/>
     </application>
+    <application path="ResourceBrowser.mxml">
+      <airExcludes/>
+    </application>
   </applications>
   <modules/>
   <buildCSSFiles/>

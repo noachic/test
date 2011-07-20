@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<fx:Object xmlns:fx="http://ns.adobe.com/mxml/2009">
-	<fx:Declarations>
+<fx:Object xmlns:app="com.cp.controller.app.*"
+		   xmlns:controller="com.cp.controller.*"
+		   xmlns:fx="http://ns.adobe.com/mxml/2009"
+		   >
 
+	<fx:Script>
+		<![CDATA[
+			import mx.resources.IResourceManager;
+			import mx.resources.ResourceManager;
+
+			public const resourceManager:IResourceManager = ResourceManager.getInstance();
+		]]>
+	</fx:Script>
+
+	<fx:Declarations>
+		<app:BootstrapAction />
+		<app:ApplicationObserver />
 	</fx:Declarations>
+
 </fx:Object>

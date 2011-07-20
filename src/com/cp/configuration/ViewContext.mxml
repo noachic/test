@@ -2,7 +2,22 @@
 <fx:Object xmlns="http://www.spicefactory.org/parsley"
 		   xmlns:fx="http://ns.adobe.com/mxml/2009"
 		   >
+	<fx:Script>
+		<![CDATA[
+			import com.cp.view.category.CategoryPopup;
+			import com.cp.view.common.MainHeader;
+		]]>
+	</fx:Script>
 
 	<fx:Declarations>
+
+		<View type="{MainHeader}" />
+
+		<Object type="{CategoryPopup}">
+			<MessageHandler method="show"
+							order="1"
+							type="com.cp.event.ui.ShowCategoryListEvent"
+							/>
+		</Object>
 	</fx:Declarations>
 </fx:Object>
