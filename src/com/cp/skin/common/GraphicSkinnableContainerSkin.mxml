@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:mx="library://ns.adobe.com/flex/mx"
+        xmlns:s="library://ns.adobe.com/flex/spark"
+        alpha.disabled="0.5"
+        >
+
+    <fx:Metadata>
+        [HostComponent("spark.components.SkinnableContainer")]
+        [Style(name="backgroundImage", type="Class")]
+        [Style(name="maskImage", type="Class")]
+        [Style(name="maskType", type="String", enumeration="alpha,clip,luminosity", inherit="yes")]
+        [Style(name="maskImageFillMode", type="String", enumeration="clip,repeat,scale", inherit="yes")]
+    </fx:Metadata>
+
+
+    <s:states>
+        <s:State name="normal" />
+        <s:State name="disabled" />
+    </s:states>
+
+    <s:Group id="graphicMask"
+             height="100%"
+             width="100%"
+             mouseEnabled="false"
+             >
+        <s:BitmapImage height="100%"
+                       source="{getStyle('maskImage')}"
+                       width="100%"
+                       fillMode="{getStyle('maskImageFillMode') || 'scale'}"
+                       />
+    </s:Group>
+
+    <s:Group height="100%"
+             width="100%"
+             mask="{getStyle('maskImage') ? graphicMask : null}"
+             maskType="{getStyle('maskType') ? getStyle('maskType') : 'alpha'}"
+             luminosityClip="true"
+             >
+        <s:BitmapImage height="100%"
+                       source="{getStyle('backgroundImage')}"
+                       width="100%"
+                       fillMode="{getStyle('backgroundImageFillMode') || 'scale'}"
+                       />
+
+        <!--- @copy spark.components.SkinnableContainer#contentGroup -->
+        <s:Group id="contentGroup"
+                 minHeight="0"
+                 minWidth="0"
+                 bottom="0"
+                 left="0"
+                 right="0"
+                 top="0"
+                 >
+            <s:layout>
+                <s:BasicLayout />
+            </s:layout>
+        </s:Group>
+    </s:Group>
+
+</s:Skin>
+

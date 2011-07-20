@@ -1,0 +1,182 @@
+/* CSS file */
+@namespace s "library://ns.adobe.com/flex/spark";
+@namespace mx "library://ns.adobe.com/flex/mx";
+
+s|Application.graphic, s|SkinnableContainer.graphic {
+    skin-class: ClassReference("com.cp.skin.common.GraphicSkinnableContainerSkin");
+}
+
+s|SkinnableDataContainer.graphic {
+    skin-class: ClassReference("com.cp.skin.common.GraphicSkinnableDataContainerSkin");
+}
+
+/* use 'repeat' as the implicit default background fill, so attach it to the styleName graphic */
+s|Application.graphic, s|SkinnableContainer.graphic, s|SkinnableDataContainer.graphic {
+    background-image-fill-mode: repeat;
+    mask-image-fill-mode: scale;
+    mask-type: alpha;
+}
+
+s|Application.repeat, s|SkinnableContainer.repeat, s|SkinnableDataContainer.repeat {
+    background-image-fill-mode: repeat;
+}
+
+s|Application.scale, s|SkinnableContainer.scale, s|SkinnableDataContainer.scale {
+    background-image-fill-mode: scale;
+}
+
+s|Application.clip, s|SkinnableContainer.clip, s|SkinnableDataContainer.clip {
+    background-image-fill-mode: clip;
+}
+
+/*
+Mask type
+*/
+s|Application.alphaMask, s|SkinnableContainer.alphaMask, s|SkinnableDataContainer.alphaMask {
+    mask-type: alpha;
+}
+
+s|Application.clipMask, s|SkinnableContainer.clipMask, s|SkinnableDataContainer.clipMask {
+    mask-type: clip;
+}
+
+s|Application.luminosityMask, s|SkinnableContainer.luminosityMask, s|SkinnableDataContainer.luminosityMask {
+    mask-type: luminosity;
+}
+
+.bannerButtonBlack {
+	background-image: Embed('/asset/resource.swf#bannerBlack');
+}
+
+
+.bannerButtonOrange {
+	background-image: Embed('/asset/resource.swf#bannerOrange');
+}
+
+.bannerBackground {
+	background-image: Embed('/asset/resource.swf#bannerBackground');
+}
+
+.grayBackground {
+	background-image: Embed('/asset/resource.swf#grayBackground');
+}
+
+
+/*
+Masks
+*/
+.maskSquare {
+    mask-image: Embed('/asset/panel_resource.swf#maskSquare');
+}
+
+.maskRound {
+    mask-image: Embed('/asset/panel_resource.swf#maskRound');
+}
+
+.maskLeft {
+    mask-image: Embed('/asset/panel_resource.swf#maskLeft');
+}
+
+.maskRight {
+    mask-image: Embed('/asset/panel_resource.swf#maskRight');
+}
+
+.maskTop {
+    mask-image: Embed('/asset/panel_resource.swf#maskTop');
+}
+
+.maskBottom {
+    mask-image: Embed('/asset/panel_resource.swf#maskBottom');
+}
+
+.maskTopLeft {
+    mask-image: Embed('/asset/panel_resource.swf#maskTopLeft');
+}
+
+.maskTopRight {
+    mask-image: Embed('/asset/panel_resource.swf#maskTopRight');
+}
+
+.maskBottomLeft {
+    mask-image: Embed('/asset/panel_resource.swf#maskBottomLeft');
+}
+
+.maskBottomRight {
+    mask-image: Embed('/asset/panel_resource.swf#maskBottomRight');
+}
+
+.maskSmallRound {
+	mask-image: Embed('/asset/panel_resource.swf#maskSmallRound');
+}
+
+.maskSmallLeft {
+	mask-image: Embed('/asset/panel_resource.swf#maskSmallLeft');
+}
+
+.maskSmallRight {
+	mask-image: Embed('/asset/panel_resource.swf#maskSmallRight');
+}
+
+.maskSmallTop {
+	mask-image: Embed('/asset/panel_resource.swf#maskSmallTop');
+}
+
+.maskSmallBottom {
+	mask-image: Embed('/asset/panel_resource.swf#maskSmallBottom');
+}
+
+.maskSmallTopLeft {
+	mask-image: Embed('/asset/panel_resource.swf#maskSmallTopLeft');
+}
+
+.maskSmallTopRight {
+	mask-image: Embed('/asset/panel_resource.swf#maskSmallTopRight');
+}
+
+.maskSmallBottomLeft {
+	mask-image: Embed('/asset/panel_resource.swf#maskSmallBottomLeft');
+}
+
+.maskSmallBottomRight {
+	mask-image: Embed('/asset/panel_resource.swf#maskSmallBottomRight');
+}
+
+.maskPointTopLeft {
+	mask-image: Embed('/asset/panel_resource.swf#maskPointTopLeft');
+}
+
+.maskPointBottomLeft {
+	mask-image: Embed('/asset/panel_resource.swf#maskPointBottomLeft');
+}
+
+.maskPointBottomRight {
+	mask-image: Embed('/asset/panel_resource.swf#maskPointBottomRight');
+}
+
+.maskPointTopRight {
+	mask-image: Embed('/asset/panel_resource.swf#maskPointTopRight');
+}
+
+.maskSmPointTopLeft {
+	mask-image: Embed('/asset/panel_resource.swf#maskSmPointTopLeft');
+}
+
+.maskSmPointBottomLeft {
+	mask-image: Embed('/asset/panel_resource.swf#maskSmPointBottomLeft');
+}
+
+.maskSmPointBottomRight {
+	mask-image: Embed('/asset/panel_resource.swf#maskSmPointBottomRight');
+}
+
+.maskSmPointTopRight {
+	mask-image: Embed('/asset/panel_resource.swf#maskSmPointTopRight');
+}
+
+.maskSubscriptionStatusArea {
+	mask-image: Embed('/asset/panel_resource.swf#subscriptionStatusArea');
+}
+
+.maskTab {
+	mask-image: Embed('/asset/panel_resource.swf#maskTab');
+}

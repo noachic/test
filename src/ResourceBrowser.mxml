@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:WindowedApplication backgroundColor="#665544"
+					   xmlns:fx="http://ns.adobe.com/mxml/2009"
+					   xmlns:mx="library://ns.adobe.com/flex/mx"
+					   xmlns:s="library://ns.adobe.com/flex/spark"
+					   >
+	<fx:Script>
+		<![CDATA[
+			import com.cp.util.MovieClipUtil;
+		]]>
+	</fx:Script>
+
+	<s:layout>
+		<s:VerticalLayout gap="20" />
+	</s:layout>
+
+	<s:ComboBox id="sourceSelector"
+				requireSelection="true"
+				>
+		<s:dataProvider>
+			<s:ArrayCollection>
+				<fx:Object label="resource.swf"
+						   source="@Embed('/asset/resource.swf')"
+						   />
+			</s:ArrayCollection>
+		</s:dataProvider>
+	</s:ComboBox>
+
+	<s:Scroller width="100%"
+				height="100%"
+				>
+		<s:Group>
+			<mx:Image id="assets"
+					  source="{sourceSelector.selectedItem.source}"
+					  mouseMove="assets.toolTip = MovieClipUtil.getSymbolName(event.target)"
+					  />
+		</s:Group>
+	</s:Scroller>
+</s:WindowedApplication>

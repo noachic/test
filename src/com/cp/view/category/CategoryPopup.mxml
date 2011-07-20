@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<popup:PopUpWrapperBase center="false"
+						xmlns:fx="http://ns.adobe.com/mxml/2009"
+						xmlns:popup="com.cp.component.*"
+						xmlns:s="library://ns.adobe.com/flex/spark"
+						>
+
+	<fx:Script>
+		<![CDATA[
+			import com.cp.event.ui.ShowCategoryListEvent;
+
+			import mx.core.UIComponent;
+
+			public function show(event:ShowCategoryListEvent):void
+			{
+				open = true;
+			}
+		]]>
+	</fx:Script>
+
+	<s:Group width="{UIComponent(parent).width}"
+			 height="{UIComponent(parent).height}"
+			 clipAndEnableScrolling="false"
+			 >
+		<s:SkinnableContainer id="content"
+							  left="90"
+							  right="400"
+							  top="90"
+							  bottom="80"
+							  styleName="graphic scale grayBackground"
+							  >
+
+		</s:SkinnableContainer>
+
+		<s:Image horizontalCenter="{UIComponent(parent).width/2 - 400}"
+				 verticalCenter="{-UIComponent(parent).height/2 + 90}"
+				 source="@Embed('/asset/resource.swf#closeUp')"
+				 />
+
+	</s:Group>
+</popup:PopUpWrapperBase>

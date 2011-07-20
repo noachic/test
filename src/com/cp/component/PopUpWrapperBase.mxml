@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<popup:PopUpWrapper xmlns:fx="http://ns.adobe.com/mxml/2009"
+                    xmlns:s="library://ns.adobe.com/flex/spark"
+                    xmlns:popup="com.adobe.cairngorm.popup.*"
+                    reuse="true"
+                    modal="true"
+                    center="true"
+                    >
+    <fx:Script>
+        <![CDATA[
+            import mx.resources.IResourceManager;
+
+            import org.spicefactory.parsley.core.context.Context;
+
+            [Bindable]
+            [Inject]
+            public var context:Context;
+
+            [Bindable]
+            [Inject]
+            public var resourceManager:IResourceManager;
+        ]]>
+    </fx:Script>
+
+    <popup:behaviors>
+        <popup:AddPopUpToParsleyContext context="{context}" />
+    </popup:behaviors>
+</popup:PopUpWrapper>

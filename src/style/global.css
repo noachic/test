@@ -1,0 +1,10 @@
+/* CSS file */
+@namespace s "library://ns.adobe.com/flex/spark";
+@namespace mx "library://ns.adobe.com/flex/mx";
+
+
+global {
+	modal-transparency: 0.8;
+	modal-transparency-blur: 0;
+	modal-transparency-color: black;
+}

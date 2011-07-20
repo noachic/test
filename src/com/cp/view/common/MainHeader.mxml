@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:HGroup height="97"
+		  paddingLeft="10"
+		  verticalAlign="middle"
+		  xmlns:component="com.cp.component.*"
+		  xmlns:fx="http://ns.adobe.com/mxml/2009"
+		  xmlns:mx="library://ns.adobe.com/flex/mx"
+		  xmlns:s="library://ns.adobe.com/flex/spark"
+		  >
+
+	<fx:Metadata>
+		[ManagedEvents("showCategoryList")]
+	</fx:Metadata>
+	<fx:Script>
+		<![CDATA[
+			import com.cp.event.ui.ShowCategoryListEvent;
+		]]>
+	</fx:Script>
+
+	<s:SkinnableContainer styleName="graphic scale bannerBackground"
+						  depth="3"
+						  >
+		<s:layout>
+			<s:HorizontalLayout paddingLeft="3"
+								paddingRight="3"
+								verticalAlign="middle"
+								gap="-35"
+								/>
+		</s:layout>
+
+		<s:SkinnableContainer verticalCenter="0"
+							  styleName="graphic scale bannerButtonBlack"
+							  depth="3"
+							  >
+			<s:SWFLoader height="80%"
+						 left="10"
+						 right="40"
+						 verticalCenter="0"
+						 source="@Embed('asset/resource.swf#logo')"
+						 />
+		</s:SkinnableContainer>
+
+		<component:BannerButton icon="@Embed('/asset/resource.swf#categoryIcon')"
+								label="Select Category"
+								depth="2"
+								touchTap="dispatchEvent(new ShowCategoryListEvent())"
+								/>
+
+		<component:BannerButton icon="@Embed('/asset/resource.swf#cupIcon')"
+								label="Select Merchant"
+								depth="1"
+								/>
+	</s:SkinnableContainer>
+
+</s:HGroup>
