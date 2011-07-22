@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<popup:PopUpWrapperBase center="false"
-						xmlns:fx="http://ns.adobe.com/mxml/2009"
+<popup:PopUpWrapperBase xmlns:fx="http://ns.adobe.com/mxml/2009"
 						xmlns:popup="com.cp.component.*"
 						xmlns:s="library://ns.adobe.com/flex/spark"
+						xmlns:category="com.cp.view.category.*"
+						xmlns:common="com.cp.component.common.*"
+						center="false"
 						>
 
 	<fx:Script>
@@ -22,6 +24,8 @@
 			 height="{UIComponent(parent).height}"
 			 clipAndEnableScrolling="false"
 			 >
+		<popup:ModalLayer color="0xFFFFFF" />
+
 		<s:SkinnableContainer id="content"
 							  left="90"
 							  right="400"
@@ -29,13 +33,17 @@
 							  bottom="80"
 							  styleName="graphic scale grayBackground"
 							  >
-
+			<category:CategoryList left="20"
+								   right="20"
+								   top="20"
+								   bottom="20"
+								   />
 		</s:SkinnableContainer>
 
-		<s:Image horizontalCenter="{UIComponent(parent).width/2 - 400}"
-				 verticalCenter="{-UIComponent(parent).height/2 + 90}"
-				 source="@Embed('/asset/resource.swf#closeUp')"
-				 />
+		<common:PopupCloseButton horizontalCenter="{UIComponent(parent).width/2 - 400}"
+								 verticalCenter="{-UIComponent(parent).height/2 + 90}"
+								 touchTap="open = false"
+								 />
 
 	</s:Group>
 </popup:PopUpWrapperBase>

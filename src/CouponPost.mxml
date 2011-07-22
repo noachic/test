@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<s:WindowedApplication showStatusBar="false"
+<s:WindowedApplication backgroundColor="#000000"
+					   showStatusBar="false"
 					   xmlns:configuration="com.cp.configuration.*"
 					   xmlns:fx="http://ns.adobe.com/mxml/2009"
 					   xmlns:mx="library://ns.adobe.com/flex/mx"
@@ -11,25 +12,22 @@
 	<fx:Style source="style/global.css" />
 	<fx:Style source="style/containers.css" />
 
-	<fx:Script>
-		<![CDATA[
-			import mx.controls.Alert;
-		]]>
-	</fx:Script>
-
 	<fx:Declarations>
 		<configuration:MainContextBuilder viewRoot="{this}" />
 		<parsley:Configure />
 	</fx:Declarations>
 
-	<s:BitmapImage source="@Embed('/asset/background.png')"
-				   fillMode="repeat"
-				   />
 
-	<view:MainView left="0"
-				   right="0"
-				   top="0"
-				   bottom="0"
+	<s:layout>
+		<s:VerticalLayout gap="0" />
+	</s:layout>
+
+	<view:AdView width="100%"
+				 height="100%"
+				 />
+
+	<view:MainView width="100%"
+				   height="1000"
 				   />
 
 </s:WindowedApplication>

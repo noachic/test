@@ -44,6 +44,10 @@ s|Application.luminosityMask, s|SkinnableContainer.luminosityMask, s|SkinnableDa
     mask-type: luminosity;
 }
 
+.appBackground {
+	background-image: Embed('/asset/background.png');
+}
+
 .bannerButtonBlack {
 	background-image: Embed('/asset/resource.swf#bannerBlack');
 }
@@ -59,6 +63,14 @@ s|Application.luminosityMask, s|SkinnableContainer.luminosityMask, s|SkinnableDa
 
 .grayBackground {
 	background-image: Embed('/asset/resource.swf#grayBackground');
+}
+
+.blackButton {
+	background-image: Embed('/asset/resource.swf#blackButton');
+}
+
+.orangeButton {
+	background-image: Embed('/asset/resource.swf#orangeButton');
 }
 
 

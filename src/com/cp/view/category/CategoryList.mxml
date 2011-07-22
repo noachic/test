@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
+		  xmlns:s="library://ns.adobe.com/flex/spark"
+		  xmlns:mx="library://ns.adobe.com/flex/mx"
+		  xmlns:category="com.cp.model.category.*"
+		  >
+	<fx:Declarations>
+		<s:ArrayCollection id="categories">
+			<category:CategoryVo name="Dinning"
+								 icon="@Embed('/asset/resource.swf#cupGraphic')"
+								 />
+			<category:CategoryVo name="Pets"
+								 icon="@Embed('/asset/resource.swf#rabbitGraphic')"
+								 />
+			<category:CategoryVo name="Automovie"
+								 icon="@Embed('/asset/resource.swf#cinemaGraphic')"
+								 />
+			<category:CategoryVo name="Entertainment"
+								 icon="@Embed('/asset/resource.swf#headPhoneGraphic')"
+								 />
+			<category:CategoryVo name="Beauty"
+								 icon="@Embed('/asset/resource.swf#dressGraphic')"
+								 />
+			<category:CategoryVo name="Travel"
+								 icon="@Embed('/asset/resource.swf#towerGraphic')"
+								 />
+			<category:CategoryVo name="Dinning"
+								 icon="@Embed('/asset/resource.swf#cupGraphic')"
+								 />
+			<category:CategoryVo name="Pets"
+								 icon="@Embed('/asset/resource.swf#rabbitGraphic')"
+								 />
+			<category:CategoryVo name="Automovie"
+								 icon="@Embed('/asset/resource.swf#cinemaGraphic')"
+								 />
+			<category:CategoryVo name="Entertainment"
+								 icon="@Embed('/asset/resource.swf#headPhoneGraphic')"
+								 />
+			<category:CategoryVo name="Beauty"
+								 icon="@Embed('/asset/resource.swf#dressGraphic')"
+								 />
+			<category:CategoryVo name="Travel"
+								 icon="@Embed('/asset/resource.swf#towerGraphic')"
+								 />
+		</s:ArrayCollection>
+	</fx:Declarations>
+
+	<s:DataGroup width="100%"
+				 height="100%"
+				 dataProvider="{categories}"
+				 itemRenderer="com.cp.itemRenderer.category.CategoryItemRenderer"
+				 >
+		<s:layout>
+			<s:TileLayout />
+		</s:layout>
+	</s:DataGroup>
+</s:VGroup>

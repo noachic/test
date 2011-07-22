@@ -4,12 +4,15 @@
 		   >
 	<fx:Script>
 		<![CDATA[
+			import com.cp.view.MainView;
 			import com.cp.view.category.CategoryPopup;
 			import com.cp.view.common.MainHeader;
 		]]>
 	</fx:Script>
 
 	<fx:Declarations>
+
+		<View type="{MainView}" />
 
 		<View type="{MainHeader}" />
 

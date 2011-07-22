@@ -1,0 +1,29 @@
+/* CSS file */
+@namespace s "library://ns.adobe.com/flex/spark";
+@namespace mx "library://ns.adobe.com/flex/mx";
+@namespace common "com.hp.siberia.components.common.*";
+
+s|ButtonBase.graphic {
+    skin-class: ClassReference("com.cp.skin.common.GraphicButtonSkin");
+}
+
+s|ToggleButtonBase.graphic {
+    skin-class: ClassReference("com.cp.skin.common.GraphicToggleButtonSkin");
+}
+
+s|ButtonBase.graphic s|TextBase,
+s|ToggleButtonBase.graphic s|TextBase
+{
+    text-align: center;
+}
+
+
+/* Small Buttons */
+s|ButtonBase.banner {
+    up-skin: Embed("/asset/button_resource.swf#SmallOrangeUp");
+    over-skin: Embed("/asset/button_resource.swf#SmallOrangeOver");
+    down-skin: Embed("/asset/button_resource.swf#SmallOrangeDown");
+    disabled-skin: Embed("/asset/button_resource.swf#SmallOrangeDisable");
+    color: #FFFFFF;
+    shadow-color: #000000;
+}

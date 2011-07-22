@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin xmlns:fx="http://ns.adobe.com/mxml/2009"
+		xmlns:mx="library://ns.adobe.com/flex/mx"
+		xmlns:s="library://ns.adobe.com/flex/spark"
+		alpha.disabled="0.5"
+		>
+
+	<fx:Metadata>
+        [HostComponent("spark.components.Button")]
+        [Style(name="disabledSkin", type="Class")]
+        [Style(name="downSkin", type="Class")]
+        [Style(name="overSkin", type="Class")]
+        [Style(name="upSkin", type="Class")]
+        [Style(name="icon", type="Class")]
+    </fx:Metadata>
+
+	<!-- states -->
+	<s:states>
+		<s:State name="disabled" />
+		<s:State name="down" />
+		<s:State name="over" />
+		<s:State name="up" />
+	</s:states>
+
+
+	<s:BitmapImage width="100%"
+				   height="100%"
+				   source=""
+				   source.disabled="{getStyle('disabledSkin')}"
+				   source.down="{getStyle('downSkin')}"
+				   source.over="{getStyle('overSkin')}"
+				   source.up="{getStyle('upSkin')}"
+				   />
+
+	<s:HGroup width="100%"
+			  height="100%"
+			  left="{getStyle('paddingLeft')}"
+			  right="{getStyle('paddingRight')}"
+			  horizontalAlign="center"
+			  verticalAlign="middle"
+			  gap="{getStyle('gap')}"
+			  >
+		<s:BitmapImage includeInLayout="{getStyle('icon')}"
+					   source="{getStyle('icon')}"
+					   visible="{getStyle('icon')}"
+					   />
+
+		<s:Label id="labelDisplay"
+				 width="100%"
+				 includeInLayout="{hostComponent.label.length != 0}"
+				 maxDisplayedLines="1"
+				 >
+			<s:filters>
+				<s:DropShadowFilter color="{getStyle('shadowColor')}"
+									alpha="0.25"
+									angle="90"
+									blurX="0"
+									blurY="0"
+									distance="1"
+									/>
+			</s:filters>
+		</s:Label>
+	</s:HGroup>
+
+</s:Skin>
