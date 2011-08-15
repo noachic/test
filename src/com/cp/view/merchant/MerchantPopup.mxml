@@ -6,6 +6,7 @@
 						xmlns:category="com.cp.model.category.*"
 						xmlns:util="com.cp.util.*"
 						xmlns:category1="com.cp.itemRenderer.category.*"
+						xmlns:merchant="com.cp.model.merchant.*"
 						center="false"
 						>
 
@@ -14,76 +15,28 @@
 		<fx:Number id="right">400</fx:Number>
 
 
-		<s:ArrayList id="categories">
-			<category:CategoryVo name="Dinning"
-								 icon="@Embed('/asset/resource.swf#cupGraphic')"
-								 />
-			<category:CategoryVo name="Pets"
-								 icon="@Embed('/asset/resource.swf#rabbitGraphic')"
-								 />
-			<category:CategoryVo name="Automovie"
-								 icon="@Embed('/asset/resource.swf#cinemaGraphic')"
-								 />
-			<category:CategoryVo name="Entertainment"
-								 icon="@Embed('/asset/resource.swf#headPhoneGraphic')"
-								 />
-			<category:CategoryVo name="Beauty"
-								 icon="@Embed('/asset/resource.swf#dressGraphic')"
-								 />
-			<category:CategoryVo name="Travel"
-								 icon="@Embed('/asset/resource.swf#towerGraphic')"
-								 />
-			<category:CategoryVo name="Travel"
-								 icon="@Embed('/asset/resource.swf#towerGraphic')"
-								 />
-			<category:CategoryVo name="Dinning"
-								 icon="@Embed('/asset/resource.swf#cupGraphic')"
-								 />
-			<category:CategoryVo name="Pets"
-								 icon="@Embed('/asset/resource.swf#rabbitGraphic')"
-								 />
-			<category:CategoryVo name="Automovie"
-								 icon="@Embed('/asset/resource.swf#cinemaGraphic')"
-								 />
-			<category:CategoryVo name="Entertainment"
-								 icon="@Embed('/asset/resource.swf#headPhoneGraphic')"
-								 />
-			<category:CategoryVo name="Beauty"
-								 icon="@Embed('/asset/resource.swf#dressGraphic')"
-								 />
-			<category:CategoryVo name="Travel"
-								 icon="@Embed('/asset/resource.swf#towerGraphic')"
-								 />
+		<s:ArrayList id="merchantList">
+			<merchant:MerchantVo name="Merchant 1" />
+			<merchant:MerchantVo name="Merchant 2" />
+			<merchant:MerchantVo name="Merchant 3" />
+			<merchant:MerchantVo name="Merchant 4" />
+			<merchant:MerchantVo name="Merchant 5" />
+			<merchant:MerchantVo name="Merchant 6" />
+			<merchant:MerchantVo name="Merchant 7" />
+			<merchant:MerchantVo name="Merchant 8" />
+			<merchant:MerchantVo name="Merchant 9" />
 		</s:ArrayList>
-
-		<!--
-		<util:PagedListCollectionView id="pagedCategories"
-									  pageSize="6"
-									  list="{categories}"
-									  />
-
-		<util:PageList id="pages"
-					   pagedList="{pagedCategories}"
-					   />
-		-->
 	</fx:Declarations>
 
 	<fx:Script>
 		<![CDATA[
-			import com.cp.event.ui.CategoryListEvent;
+			import com.cp.event.ui.MerchantListEvent;
 
 			import mx.core.UIComponent;
 
-			import org.spicefactory.lib.reflect.types.Void;
-
-			public function show(event:CategoryListEvent):void
+			public function show(event:MerchantListEvent):void
 			{
 				open = true;
-			}
-
-			public function hide(event:CategoryListEvent):void
-			{
-				open = false;
 			}
 		]]>
 	</fx:Script>
@@ -121,8 +74,8 @@
 						skinClass="com.cp.skin.common.NoBarScroller"
 						>
 				<s:DataGroup height="100%"
-							 dataProvider="{categories}"
-							 itemRenderer="com.cp.itemRenderer.category.CategoryItemRenderer"
+							 dataProvider="{merchantList}"
+							 itemRenderer="com.cp.itemRenderer.merchant.MerchantItemRenderer"
 							 >
 					<s:layout>
 						<s:TileLayout horizontalGap="120"

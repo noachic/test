@@ -21,7 +21,9 @@
 	</s:states>
 
 	<s:layout>
-		<s:VerticalLayout horizontalAlign="center" />
+		<s:VerticalLayout horizontalAlign="center"
+						  gap="20"
+						  />
 	</s:layout>
 
 	<s:SkinnableContainer styleName.down="graphic orangeButton"
@@ -33,8 +35,17 @@
 					   verticalCenter="0"
 					   source="{category.icon}"
 					   />
+		<s:filters>
+			<s:DropShadowFilter blurX="20"
+								blurY="20"
+								distance="0"
+								/>
+		</s:filters>
 	</s:SkinnableContainer>
 
-	<component:DropShadowLabel text="{category.name}" />
+	<s:Label fontSize="40"
+			 fontWeight="bold"
+			 text="{category.name}"
+			 />
 
 </s:ItemRenderer>

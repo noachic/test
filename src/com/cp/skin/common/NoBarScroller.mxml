@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:SparkSkin xmlns:fx="http://ns.adobe.com/mxml/2009"
+			 xmlns:s="library://ns.adobe.com/flex/spark"
+			 >
+
+	<fx:Metadata>
+		[HostComponent("spark.components.Scroller")]
+	</fx:Metadata>
+
+
+	<!---  A horizontal scrollbar that lets you control the portion of data that is displayed
+			when there is too much data to fit horizontally in a display area.
+			The Scroller determines whether the horizontal ScrollBar is visible. -->
+	<s:HScrollBar id="horizontalScrollBar"
+				  scaleY="0.0001"
+				  visible="false"
+				  />
+
+</s:SparkSkin>

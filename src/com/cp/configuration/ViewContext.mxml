@@ -7,6 +7,7 @@
 			import com.cp.view.MainView;
 			import com.cp.view.category.CategoryPopup;
 			import com.cp.view.common.MainHeader;
+			import com.cp.view.merchant.MerchantPopup;
 		]]>
 	</fx:Script>
 
@@ -14,13 +15,48 @@
 
 		<View type="{MainView}" />
 
-		<View type="{MainHeader}" />
+		<View type="{MainHeader}">
+			<ManagedEvents>
+				<names>
+					<fx:String>showCategoryList</fx:String>
+				</names>
+			</ManagedEvents>
+		</View>
 
 		<Object type="{CategoryPopup}">
 			<MessageHandler method="show"
 							order="1"
-							type="com.cp.event.ui.ShowCategoryListEvent"
+							selector="showCategoryList"
+							type="com.cp.event.ui.CategoryListEvent"
 							/>
+			<MessageHandler method="hide"
+							order="2"
+							selector="selectCategory"
+							type="com.cp.event.ui.CategoryListEvent"
+							/>
+			<ManagedEvents>
+				<names>
+					<fx:String>selectCategory</fx:String>
+				</names>
+			</ManagedEvents>
+		</Object>
+
+		<Object type="{MerchantPopup}">
+			<MessageHandler method="show"
+							order="1"
+							selector="showMerchantList"
+							type="com.cp.event.ui.MerchantListEvent"
+							/>
+			<MessageHandler method="hide"
+							order="2"
+							selector="selectMerchant"
+							type="com.cp.event.ui.MerchantListEvent"
+							/>
+			<ManagedEvents>
+				<names>
+					<fx:String>selectMerchant</fx:String>
+				</names>
+			</ManagedEvents>
 		</Object>
 	</fx:Declarations>
 </fx:Object>

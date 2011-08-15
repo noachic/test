@@ -73,6 +73,10 @@ s|Application.luminosityMask, s|SkinnableContainer.luminosityMask, s|SkinnableDa
 	background-image: Embed('/asset/resource.swf#orangeButton');
 }
 
+.shadowedWhiteBackground {
+	background-image: Embed('/asset/resource.swf#shadowedWhiteBackground');
+}
+
 
 /*
 Masks

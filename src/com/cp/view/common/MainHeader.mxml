@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<s:HGroup height="97"
-		  paddingLeft="10"
-		  verticalAlign="middle"
-		  xmlns:component="com.cp.component.*"
+<s:HGroup xmlns:component="com.cp.component.*"
 		  xmlns:fx="http://ns.adobe.com/mxml/2009"
 		  xmlns:mx="library://ns.adobe.com/flex/mx"
 		  xmlns:s="library://ns.adobe.com/flex/spark"
+		  height="97"
+		  paddingLeft="10"
+		  verticalAlign="middle"
 		  >
 
-	<fx:Metadata>
-		[ManagedEvents("showCategoryList")]
-	</fx:Metadata>
 	<fx:Script>
 		<![CDATA[
-			import com.cp.event.ui.ShowCategoryListEvent;
+			import com.cp.event.ui.CategoryListEvent;
 		]]>
 	</fx:Script>
 
@@ -43,7 +40,7 @@
 		<component:BannerButton icon="@Embed('/asset/resource.swf#categoryIcon')"
 								label="Select Category"
 								depth="2"
-								touchTap="dispatchEvent(new ShowCategoryListEvent())"
+								touchTap="dispatchEvent(CategoryListEvent.showCategoryList())"
 								/>
 
 		<component:BannerButton icon="@Embed('/asset/resource.swf#cupIcon')"

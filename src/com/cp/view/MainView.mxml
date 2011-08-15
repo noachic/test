@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<s:SkinnableContainer styleName="graphic scale appBackground"
-					  xmlns:common="com.cp.view.common.*"
+<s:SkinnableContainer xmlns:common="com.cp.view.common.*"
 					  xmlns:fx="http://ns.adobe.com/mxml/2009"
 					  xmlns:mx="library://ns.adobe.com/flex/mx"
 					  xmlns:s="library://ns.adobe.com/flex/spark"
+					  styleName="graphic scale appBackground"
 					  >
+
 	<fx:Declarations>
 	</fx:Declarations>
 
@@ -13,4 +14,5 @@
 	</s:layout>
 
 	<common:MainHeader />
+
 </s:SkinnableContainer>
