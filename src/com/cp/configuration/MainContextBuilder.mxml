@@ -9,6 +9,7 @@
 	<cairngorm:CairngormNavigationSupport />
 
 	<spicefactory:FlexConfig type="{BusinessContext}" />
+	<spicefactory:FlexConfig type="{NavigationContext}" />
 	<spicefactory:FlexConfig type="{ViewContext}" />
 
 </spicefactory:ContextBuilder>

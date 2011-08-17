@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <fx:Object xmlns="http://www.spicefactory.org/parsley"
 		   xmlns:fx="http://ns.adobe.com/mxml/2009"
+		   xmlns:cairngorm="http://ns.adobe.com/cairngorm"
 		   >
 	<fx:Script>
 		<![CDATA[
+			import com.adobe.cairngorm.navigation.NavigationEvent;
 			import com.cp.view.MainView;
 			import com.cp.view.category.CategoryPopup;
 			import com.cp.view.common.MainHeader;
@@ -13,12 +15,19 @@
 
 	<fx:Declarations>
 
-		<View type="{MainView}" />
+		<View type="{MainView}">
+			<cairngorm:Waypoint name="view"
+								mode="states"
+								/>
+		</View>
 
 		<View type="{MainHeader}">
+			<Subscribe property="currentCategory" />
 			<ManagedEvents>
 				<names>
 					<fx:String>showCategoryList</fx:String>
+					<fx:String>showMerchantList</fx:String>
+					<fx:String>{NavigationEvent.NAVIGATE_TO}</fx:String>
 				</names>
 			</ManagedEvents>
 		</View>
@@ -34,11 +43,7 @@
 							selector="selectCategory"
 							type="com.cp.event.ui.CategoryListEvent"
 							/>
-			<ManagedEvents>
-				<names>
-					<fx:String>selectCategory</fx:String>
-				</names>
-			</ManagedEvents>
+			<MessageDispatcher property="dispatch" />
 		</Object>
 
 		<Object type="{MerchantPopup}">
@@ -52,11 +57,7 @@
 							selector="selectMerchant"
 							type="com.cp.event.ui.MerchantListEvent"
 							/>
-			<ManagedEvents>
-				<names>
-					<fx:String>selectMerchant</fx:String>
-				</names>
-			</ManagedEvents>
+			<MessageDispatcher property="dispatch" />
 		</Object>
 	</fx:Declarations>
 </fx:Object>

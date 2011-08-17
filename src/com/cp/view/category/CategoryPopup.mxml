@@ -3,9 +3,9 @@
 						xmlns:popup="com.cp.component.*"
 						xmlns:s="library://ns.adobe.com/flex/spark"
 						xmlns:common="com.cp.component.common.*"
-						xmlns:category="com.cp.model.category.*"
+						xmlns:model="com.cp.model.category.*"
 						xmlns:util="com.cp.util.*"
-						xmlns:category1="com.cp.itemRenderer.category.*"
+						xmlns:category="com.cp.view.category.*"
 						center="false"
 						>
 
@@ -14,46 +14,46 @@
 		<fx:Number id="right">400</fx:Number>
 
 
-		<s:ArrayList id="categories">
-			<category:CategoryVo name="Dinning"
-								 icon="@Embed('/asset/resource.swf#cupGraphic')"
-								 />
-			<category:CategoryVo name="Pets"
-								 icon="@Embed('/asset/resource.swf#rabbitGraphic')"
-								 />
-			<category:CategoryVo name="Automovie"
-								 icon="@Embed('/asset/resource.swf#cinemaGraphic')"
-								 />
-			<category:CategoryVo name="Entertainment"
-								 icon="@Embed('/asset/resource.swf#headPhoneGraphic')"
-								 />
-			<category:CategoryVo name="Beauty"
-								 icon="@Embed('/asset/resource.swf#dressGraphic')"
-								 />
-			<category:CategoryVo name="Travel"
-								 icon="@Embed('/asset/resource.swf#towerGraphic')"
-								 />
-			<category:CategoryVo name="Travel"
-								 icon="@Embed('/asset/resource.swf#towerGraphic')"
-								 />
-			<category:CategoryVo name="Dinning"
-								 icon="@Embed('/asset/resource.swf#cupGraphic')"
-								 />
-			<category:CategoryVo name="Pets"
-								 icon="@Embed('/asset/resource.swf#rabbitGraphic')"
-								 />
-			<category:CategoryVo name="Automovie"
-								 icon="@Embed('/asset/resource.swf#cinemaGraphic')"
-								 />
-			<category:CategoryVo name="Entertainment"
-								 icon="@Embed('/asset/resource.swf#headPhoneGraphic')"
-								 />
-			<category:CategoryVo name="Beauty"
-								 icon="@Embed('/asset/resource.swf#dressGraphic')"
-								 />
-			<category:CategoryVo name="Travel"
-								 icon="@Embed('/asset/resource.swf#towerGraphic')"
-								 />
+		<s:ArrayList id="categoryList">
+			<model:CategoryVo name="Dinning"
+							  icon="@Embed('/asset/resource.swf#cupGraphic')"
+							  />
+			<model:CategoryVo name="Pets"
+							  icon="@Embed('/asset/resource.swf#rabbitGraphic')"
+							  />
+			<model:CategoryVo name="Automovie"
+							  icon="@Embed('/asset/resource.swf#cinemaGraphic')"
+							  />
+			<model:CategoryVo name="Entertainment"
+							  icon="@Embed('/asset/resource.swf#headPhoneGraphic')"
+							  />
+			<model:CategoryVo name="Beauty"
+							  icon="@Embed('/asset/resource.swf#dressGraphic')"
+							  />
+			<model:CategoryVo name="Travel"
+							  icon="@Embed('/asset/resource.swf#towerGraphic')"
+							  />
+			<model:CategoryVo name="Travel"
+							  icon="@Embed('/asset/resource.swf#towerGraphic')"
+							  />
+			<model:CategoryVo name="Dinning"
+							  icon="@Embed('/asset/resource.swf#cupGraphic')"
+							  />
+			<model:CategoryVo name="Pets"
+							  icon="@Embed('/asset/resource.swf#rabbitGraphic')"
+							  />
+			<model:CategoryVo name="Automovie"
+							  icon="@Embed('/asset/resource.swf#cinemaGraphic')"
+							  />
+			<model:CategoryVo name="Entertainment"
+							  icon="@Embed('/asset/resource.swf#headPhoneGraphic')"
+							  />
+			<model:CategoryVo name="Beauty"
+							  icon="@Embed('/asset/resource.swf#dressGraphic')"
+							  />
+			<model:CategoryVo name="Travel"
+							  icon="@Embed('/asset/resource.swf#towerGraphic')"
+							  />
 		</s:ArrayList>
 
 		<!--
@@ -74,7 +74,7 @@
 
 			import mx.core.UIComponent;
 
-			import org.spicefactory.lib.reflect.types.Void;
+			public var dispatch:Function;
 
 			public function show(event:CategoryListEvent):void
 			{
@@ -93,56 +93,16 @@
 			 >
 		<popup:ModalLayer height="1000"
 						  bottom="0"
-						  color="0x000000"
-						  alpha="0.7"
 						  />
 
-		<s:SkinnableContainer id="content"
-							  left="90"
-							  right="{right}"
-							  top="{top}"
-							  bottom="80"
-							  styleName="graphic scale grayBackground"
-							  >
-			<s:layout>
-				<s:VerticalLayout horizontalAlign="center"
-								  paddingBottom="90"
-								  paddingLeft="130"
-								  paddingRight="130"
-								  paddingTop="90"
-								  gap="50"
-								  />
-			</s:layout>
-
-
-			<s:Scroller width="100%"
-						height="100%"
-						interactionMode="touch"
-						skinClass="com.cp.skin.common.NoBarScroller"
-						>
-				<s:DataGroup height="100%"
-							 dataProvider="{categories}"
-							 itemRenderer="com.cp.itemRenderer.category.CategoryItemRenderer"
-							 >
-					<s:layout>
-						<s:TileLayout horizontalGap="120"
-									  paddingTop="10"
-									  verticalGap="60"
-									  orientation="columns"
-									  requestedColumnCount="3"
-									  requestedRowCount="2"
-									  />
-					</s:layout>
-				</s:DataGroup>
-			</s:Scroller>
-
-			<!--
-			<s:List dataProvider="{pages}"
-					selectedIndex="{pages.selectedIndex}"
-					skinClass="com.cp.skin.common.PageListSkin"
-					/>
-			-->
-		</s:SkinnableContainer>
+		<category:CategoryList id="content"
+							   left="90"
+							   right="{right}"
+							   top="{top}"
+							   bottom="80"
+							   categoryList="{categoryList}"
+							   selectCategory="dispatch(event)"
+							   />
 
 		<common:PopupCloseButton horizontalCenter="{UIComponent(parent).width/2 - right}"
 								 verticalCenter="{-UIComponent(parent).height/2 + top}"

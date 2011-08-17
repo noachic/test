@@ -3,7 +3,13 @@
 				xmlns:s="library://ns.adobe.com/flex/spark"
 				xmlns:merchant="com.cp.model.merchant.*"
 				autoDrawBackground="false"
+				touchTap="dispatchEvent(MerchantListEvent.selectMerchant(merchant))"
 				>
+	<fx:Script>
+		<![CDATA[
+			import com.cp.event.ui.MerchantListEvent;
+		]]>
+	</fx:Script>
 
 	<fx:Declarations>
 		<merchant:MerchantVo id="merchant" />

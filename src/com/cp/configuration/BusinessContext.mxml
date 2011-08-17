@@ -2,10 +2,15 @@
 <fx:Object xmlns:app="com.cp.controller.app.*"
 		   xmlns:controller="com.cp.controller.*"
 		   xmlns:fx="http://ns.adobe.com/mxml/2009"
+		   xmlns="http://www.spicefactory.org/parsley"
 		   >
 
 	<fx:Script>
 		<![CDATA[
+			import com.cp.controller.category.SelectCategoryAction;
+			import com.cp.controller.merchant.SelectMerchantAction;
+			import com.cp.model.common.MainPublisher;
+
 			import mx.resources.IResourceManager;
 			import mx.resources.ResourceManager;
 
@@ -16,6 +21,31 @@
 	<fx:Declarations>
 		<app:BootstrapAction />
 		<app:ApplicationObserver />
+
+		<Object type="{MainPublisher}">
+			<Publish property="currentCategory" />
+			<Publish property="currentMerchant" />
+		</Object>
+
+		<Object type="{SelectCategoryAction}">
+			<MessageHandler method="selectCategory"
+							selector="selectCategory"
+							/>
+			<MessageDispatcher property="dispatch" />
+			<Property name="mainPublisher"
+					  typeRef="{MainPublisher}"
+					  />
+		</Object>
+
+		<Object type="{SelectMerchantAction}">
+			<MessageHandler method="selectMerchant"
+							selector="selectMerchant"
+							/>
+			<MessageDispatcher property="dispatch" />
+			<Property name="mainPublisher"
+					  typeRef="{MainPublisher}"
+					  />
+		</Object>
 	</fx:Declarations>
 
 </fx:Object>

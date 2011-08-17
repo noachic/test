@@ -3,14 +3,21 @@
 		  xmlns:fx="http://ns.adobe.com/mxml/2009"
 		  xmlns:mx="library://ns.adobe.com/flex/mx"
 		  xmlns:s="library://ns.adobe.com/flex/spark"
+		  xmlns:category="com.cp.model.category.*"
 		  height="97"
 		  paddingLeft="10"
 		  verticalAlign="middle"
 		  >
 
+	<fx:Declarations>
+		<category:CategoryVo id="currentCategory" />
+	</fx:Declarations>
+
 	<fx:Script>
 		<![CDATA[
+			import com.adobe.cairngorm.navigation.NavigationEvent;
 			import com.cp.event.ui.CategoryListEvent;
+			import com.cp.event.ui.MerchantListEvent;
 		]]>
 	</fx:Script>
 
@@ -28,6 +35,7 @@
 		<s:SkinnableContainer verticalCenter="0"
 							  styleName="graphic scale bannerButtonBlack"
 							  depth="3"
+							  touchTap="dispatchEvent(NavigationEvent.createNavigateToEvent('view.home'))"
 							  >
 			<s:SWFLoader height="80%"
 						 left="10"
@@ -44,8 +52,11 @@
 								/>
 
 		<component:BannerButton icon="@Embed('/asset/resource.swf#cupIcon')"
+								includeInLayout="{currentCategory != null}"
 								label="Select Merchant"
 								depth="1"
+								touchTap="dispatchEvent(MerchantListEvent.showMerchantList())"
+								visible="{currentCategory != null}"
 								/>
 	</s:SkinnableContainer>
 

@@ -5,7 +5,13 @@
 				xmlns:category="com.cp.model.category.*"
 				xmlns:component="com.cp.component.*"
 				autoDrawBackground="false"
+				touchTap="dispatchEvent(CategoryListEvent.selectCategory(category))"
 				>
+	<fx:Script>
+		<![CDATA[
+			import com.cp.event.ui.CategoryListEvent;
+		]]>
+	</fx:Script>
 
 	<fx:Declarations>
 		<category:CategoryVo id="category" />

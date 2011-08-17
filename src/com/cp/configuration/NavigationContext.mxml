@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fx:Object xmlns:fx="http://ns.adobe.com/mxml/2009"
+		   xmlns="http://www.spicefactory.org/parsley"
+		   xmlns:cairngorm="http://ns.adobe.com/cairngorm"
+		   >
+	<fx:Script>
+		<![CDATA[
+			import com.cp.model.common.MainPublisher;
+			import com.cp.navigation.*;
+		]]>
+	</fx:Script>
+
+	<fx:Declarations>
+		<Object type="{HomeLandmark}">
+			<cairngorm:Landmark name="view.home" />
+			<cairngorm:Enter method="enter"
+							 time="every"
+							 />
+			<Property name="mainPublisher"
+					  typeRef="{MainPublisher}"
+					  />
+		</Object>
+	</fx:Declarations>
+
+</fx:Object>

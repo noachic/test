@@ -5,12 +5,13 @@
 					  >
 
 	<fx:Metadata>
-		[Event(name="selectCategory", type="com.cp.event.ui.CategoryListEvent")]
+		[Event(name="selectMerchant", type="com.cp.event.ui.MerchantListEvent")]
 	</fx:Metadata>
 
 	<fx:Declarations>
-		<s:ArrayList id="categoryList" />
+		<s:ArrayList id="merchantList" />
 	</fx:Declarations>
+
 
 	<s:layout>
 		<s:VerticalLayout horizontalAlign="center"
@@ -29,8 +30,8 @@
 				skinClass="com.cp.skin.common.NoBarScroller"
 				>
 		<s:DataGroup height="100%"
-					 dataProvider="{categoryList}"
-					 itemRenderer="com.cp.itemRenderer.category.CategoryItemRenderer"
+					 dataProvider="{merchantList}"
+					 itemRenderer="com.cp.itemRenderer.merchant.MerchantItemRenderer"
 					 >
 			<s:layout>
 				<s:TileLayout horizontalGap="120"
