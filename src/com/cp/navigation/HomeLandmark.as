@@ -1,15 +1,15 @@
 package com.cp.navigation
 {
-	import com.cp.model.common.MainPublisher;
+	import com.cp.model.common.MainModel;
 
 	public class HomeLandmark
 	{
-		public var mainPublisher:MainPublisher;
+		public var mainModel:MainModel;
 
 		public function enter():void
 		{
-			mainPublisher.currentCategory = null;
-			mainPublisher.currentMerchant = null;
+			mainModel.currentCategory = null;
+			mainModel.currentMerchant = null;
 		}
 	}
 }

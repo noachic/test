@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<merchant>
+		<merchantId>1</merchantId>
+		<name>Arby's</name>
+		<slogan>Now That Your Tastes Have Grown Up! </slogan>
+		<description>a unique, better tasting alternative to traditional fast food</description>
+		<categoryId>1</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>2</merchantId>
+		<name>Ben and Jerry's</name>
+		<slogan>Ben &amp; Jerry's Homemade Ice Cream</slogan>
+		<categoryId>1</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>3</merchantId>
+		<name>Coldstone Creamery</name>
+		<slogan>The Ultimate Ice Cream Experience</slogan>
+		<categoryId>1</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>4</merchantId>
+		<name>Hot Dog on a Stick</name>
+		<slogan>Signature Hot Dog on a StickTM and Fresh Lemonade </slogan>
+		<categoryId>1</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>5</merchantId>
+		<name>KFC</name>
+		<slogan>Finger Lickin' Good</slogan>
+		<categoryId>1</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>6</merchantId>
+		<name>L&amp;L Hawaiian Drive-In</name>
+		<slogan>The Spirit of Aloha </slogan>
+		<categoryId>1</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>7</merchantId>
+		<name>Pizza Hut</name>
+		<slogan>America's Favorite Pizza</slogan>
+		<categoryId>1</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>8</merchantId>
+		<name>Round Table Pizza</name>
+		<slogan>Quality Ingredients</slogan>
+		<categoryId>1</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>9</merchantId>
+		<name>Subway</name>
+		<slogan>Subway. Eat fresh</slogan>
+		<categoryId>1</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>10</merchantId>
+		<name>Taco Bell</name>
+		<slogan>Think Outside the Bun</slogan>
+		<categoryId>1</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>11</merchantId>
+		<name>Wendys</name>
+		<slogan>Do What Tastes Right.</slogan>
+		<categoryId>1</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>12</merchantId>
+		<name>PetCareRx</name>
+		<slogan>Amerca's Most Affordable Pet Pharmacy</slogan>
+		<categoryId>4</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>13</merchantId>
+		<name>Pets Best Insurance</name>
+		<slogan>Simply the Best Pet Insurance</slogan>
+		<categoryId>4</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>14</merchantId>
+		<name>Petsmart</name>
+		<slogan>We Love to See Healthy, Happy Pets</slogan>
+		<categoryId>4</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>59</merchantId>
+		<name>Banfield</name>
+		<slogan>The Pet Hospital</slogan>
+		<categoryId>4</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>15</merchantId>
+		<name>Americas Tire</name>
+		<slogan>Americas Largest Independent Tire Dealer</slogan>
+		<categoryId>3</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>16</merchantId>
+		<name>Goodyear</name>
+		<slogan>We Discover, You Explore.</slogan>
+		<categoryId>3</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>17</merchantId>
+		<name>Jiffy Lube</name>
+		<slogan>The Well-Oiled Machines</slogan>
+		<categoryId>3</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>18</merchantId>
+		<name>Les Schwab</name>
+		<slogan>Tires, Wheels, Batteries, Brakes and Much More!</slogan>
+		<categoryId>3</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>19</merchantId>
+		<name>Oil Changers</name>
+		<slogan>Oil and Lubrication Services in California</slogan>
+		<categoryId>3</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>20</merchantId>
+		<name>Wheel Works</name>
+		<slogan>Your Keys Are in Good Hands.</slogan>
+		<categoryId>3</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>21</merchantId>
+		<name>300 - San Jose</name>
+		<slogan>Bowling. With a Twist.</slogan>
+		<categoryId>2</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>22</merchantId>
+		<name>AMC Movie Theaters</name>
+		<slogan> American Multi-Cinema</slogan>
+		<categoryId>2</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>23</merchantId>
+		<name>AMF Bowling Centers</name>
+		<slogan>Where America Goes Bowling</slogan>
+		<categoryId>2</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>24</merchantId>
+		<name>California's Great America</name>
+		<slogan>Thrill Rides and Coasters</slogan>
+		<categoryId>2</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>25</merchantId>
+		<name>Children's Discovery  Museum of San Jose</name>
+		<slogan> A Center for Learning and Discovery</slogan>
+		<categoryId>2</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>26</merchantId>
+		<name>Cinemark</name>
+		<slogan>Cinemark - The Best Seat In Town</slogan>
+		<categoryId>2</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>27</merchantId>
+		<name>Golf Land-Emerald Hills</name>
+		<slogan>Family Fun Centers</slogan>
+		<categoryId>2</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>28</merchantId>
+		<name>Las Palmas Park</name>
+		<slogan>Well-Shaded  Polynesian Themed Park </slogan>
+		<categoryId>2</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>29</merchantId>
+		<name>San Jose Skate</name>
+		<slogan>Skating Theme Park</slogan>
+		<categoryId>2</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>30</merchantId>
+		<name>Sharks Ice</name>
+		<slogan>Official Ice Skating Facilities of the San Jose Sharks</slogan>
+		<categoryId>2</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>31</merchantId>
+		<name>The Jungle</name>
+		<slogan>Fun &amp; Adventure</slogan>
+		<categoryId>2</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>32</merchantId>
+		<name>Great Clips</name>
+		<slogan>The Best Value in Haircuts</slogan>
+		<categoryId>5</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>33</merchantId>
+		<name>Planet Beauty</name>
+		<slogan>California's Most Unique, Cutting Edge Beauty Boutique</slogan>
+		<categoryId>5</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>34</merchantId>
+		<name>Sephora</name>
+		<slogan>Today's Free Samples</slogan>
+		<categoryId>5</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>35</merchantId>
+		<name>Supercuts</name>
+		<slogan>Hairstyles &amp; Haircuts for Men &amp; Women</slogan>
+		<categoryId>5</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>36</merchantId>
+		<name>Ultra</name>
+		<slogan>Cosmetics, Fragrance, Salon and Beauty Gifts</slogan>
+		<categoryId>5</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>37</merchantId>
+		<name>Alamo Rental</name>
+		<slogan>Last Minute Specials, Cheap Deals - Alamo Rent A Car</slogan>
+		<categoryId>6</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>38</merchantId>
+		<name>American Airlines</name>
+		<slogan>We Know Why You Fly. We're American Airlines. </slogan>
+		<categoryId>6</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>39</merchantId>
+		<name>Avis</name>
+		<slogan>Avis Car Rental - Rent A Car with Avis</slogan>
+		<categoryId>6</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>40</merchantId>
+		<name>Diamond Peak</name>
+		<slogan>Look Forward to Seeing You in December! - Diamond Peak Ski Resort Lake Tahoe</slogan>
+		<categoryId>6</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>41</merchantId>
+		<name>Enterprise Rent A Car</name>
+		<slogan>Enterprise Rent-A-Car - Rental Cars at Low Rates</slogan>
+		<categoryId>6</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>42</merchantId>
+		<name>Expedia</name>
+		<slogan>Expedia Travel: Where You Book Matters.</slogan>
+		<categoryId>6</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>43</merchantId>
+		<name>Hotwire</name>
+		<slogan>Hotwire.com: Discount Airfare, Hotel, Car,  Vacation and Cruises</slogan>
+		<categoryId>6</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>44</merchantId>
+		<name>Incline Village Golf Courses</name>
+		<slogan>The Golf Courses at Incline Village, Lake Tahoe - GolfIncline.com </slogan>
+		<categoryId>6</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>45</merchantId>
+		<name>Los Lagos Golf</name>
+		<slogan>Lowest Price Tee Time Anywhere</slogan>
+		<categoryId>6</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>46</merchantId>
+		<name>Priceline</name>
+		<slogan>Exclusive travel discounts you won't find anywhere else.</slogan>
+		<categoryId>6</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>47</merchantId>
+		<name>Soda Springs</name>
+		<slogan>Tahoe's Best Snow Park for Kids</slogan>
+		<categoryId>6</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>48</merchantId>
+		<name>Southwest Airlines</name>
+		<slogan>Book Lowest Airfare Deals</slogan>
+		<categoryId>6</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>49</merchantId>
+		<name>Aldo</name>
+		<slogan>We Love Our Sale</slogan>
+		<categoryId>7</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>50</merchantId>
+		<name>Banana Republic</name>
+		<slogan>Apparel, Handbags, Shoes and Accessories for Women and Men </slogan>
+		<categoryId>7</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>51</merchantId>
+		<name>Coach</name>
+		<slogan>Luxury Lifestyle Handbags and Accessories</slogan>
+		<categoryId>7</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>52</merchantId>
+		<name>Express</name>
+		<slogan>Shop the Hottest Clothes at Express</slogan>
+		<categoryId>7</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>53</merchantId>
+		<name>Guess</name>
+		<slogan>All-American looks with a uniquely European attention to detail.</slogan>
+		<categoryId>7</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>54</merchantId>
+		<name>H&amp;M</name>
+		<slogan>Everyone's Own Personal Fashion</slogan>
+		<categoryId>7</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>55</merchantId>
+		<name>AT&amp;T</name>
+		<slogan>Cell Phones,  Digital TV, DSL Internet, and Phone Service</slogan>
+		<categoryId>11</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>56</merchantId>
+		<name>Comcast</name>
+		<slogan>High-Speed Internet, Cable, HD, Phone Service Provider</slogan>
+		<categoryId>11</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>57</merchantId>
+		<name>DirecTV</name>
+		<slogan>Good TV. Better TV. DIRECTV.</slogan>
+		<categoryId>11</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>58</merchantId>
+		<name>Dish Network</name>
+		<slogan>DISH Satellite TV - $24.99 &amp; HD Free For Life - Why Pay More?</slogan>
+		<categoryId>11</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>59</merchantId>
+		<name>iTalkBB</name>
+		<slogan>The Smart Way to Talk</slogan>
+		<categoryId>11</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>60</merchantId>
+		<name>Verizon</name>
+		<slogan>What can We Help You Today?</slogan>
+		<categoryId>11</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>61</merchantId>
+		<name>Vonage</name>
+		<slogan>Sounds Good</slogan>
+		<categoryId>11</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>62</merchantId>
+		<name>AT&amp;T Wireless</name>
+		<categoryId>12</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>63</merchantId>
+		<name>Sprint</name>
+		<slogan>The NOW Network</slogan>
+		<categoryId>12</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>64</merchantId>
+		<name>T-Mobile</name>
+		<slogan>Phones you Love, Plans you Want Get Great Savings at T-Mobile</slogan>
+		<categoryId>12</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>65</merchantId>
+		<name>Verizon Wireless</name>
+		<categoryId>12</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>66</merchantId>
+		<name>24 Hour Fitness</name>
+		<slogan>It's Time for Fitness on Your Terms</slogan>
+		<categoryId>13</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>67</merchantId>
+		<name>Bally Total Fitness</name>
+		<slogan>Total Fitness</slogan>
+		<categoryId>13</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>68</merchantId>
+		<name>Gold's Gym</name>
+		<slogan>Know Your Own Strength</slogan>
+		<categoryId>13</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>69</merchantId>
+		<name>Planet Granite</name>
+		<slogan>Climbing, Yoga, Fitness</slogan>
+		<categoryId>13</categoryId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>71</merchantId>
+		<name>ooma</name>
+		<slogan>Free Home Phone Service</slogan>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>72</merchantId>
+		<name>RingCentral</name>
+		<slogan>Your Phone System, Everywhere.</slogan>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>73</merchantId>
+		<name>ViaTalk</name>
+		<slogan>Internet phone Service and Boardband phone Service</slogan>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>74</merchantId>
+		<name>ITP</name>
+		<slogan>Internet Telephone Provider</slogan>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>75</merchantId>
+		<name>PhonePower</name>
+		<slogan>Communications Evolved</slogan>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>76</merchantId>
+		<name>Packet8</name>
+		<slogan>Voip Business Phone Service</slogan>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>77</merchantId>
+		<name>Call Centric</name>
+		<slogan>Internet Phone Service</slogan>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>78</merchantId>
+		<name>Jive</name>
+		<slogan>IP PBX Phone System</slogan>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>79</merchantId>
+		<name>Vocalocity</name>
+		<slogan>Powering samll Business</slogan>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>80</merchantId>
+		<name>State Farm</name>
+		<slogan>Like a Good Neighbor, State Farm is There.</slogan>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>81</merchantId>
+		<name>AllState</name>
+		<slogan>You're In Good Hands With Allstate.</slogan>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>82</merchantId>
+		<name>Geico</name>
+		<slogan>Fifteen Minutes Could Save You 15 Percent or More on Car Insurance.</slogan>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>83</merchantId>
+		<name>Amica</name>
+		<slogan>Amica. We Keep Our Promises to You.</slogan>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>84</merchantId>
+		<name>Esurance</name>
+		<slogan>Get Your Quote &amp;amp; Save on Auto Insurance</slogan>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>85</merchantId>
+		<name>Liberty Mutual</name>
+		<slogan>Responsibility. What's Your Policy?</slogan>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>86</merchantId>
+		<name>Progressive Insurance</name>
+		<slogan>Think Easier; Think Progressive</slogan>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>87</merchantId>
+		<name>NationWide</name>
+		<slogan>Nationwide Is On Your Side</slogan>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>88</merchantId>
+		<name>Farmer's Insurance</name>
+		<slogan>Farmers. Gets You Back Where You Belong.</slogan>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>89</merchantId>
+		<name>Mercury Insurance</name>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>90</merchantId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>91</merchantId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>92</merchantId>
+		<name>24 Hour Fitness</name>
+		<slogan>It's Time for Fitness on Your Terms</slogan>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>93</merchantId>
+		<name>Bally Total Fitness</name>
+		<slogan>Total Fitness</slogan>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>94</merchantId>
+		<name>Equinox Fitness Club</name>
+		<slogan>It's not Fitness, It's Life</slogan>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>95</merchantId>
+		<name>Gold's Gym</name>
+		<slogan>Know Your Own Strength</slogan>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>96</merchantId>
+		<name>Planet Granite</name>
+		<slogan>Climbing, Yoga, Fitness</slogan>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>97</merchantId>
+		<name>Fitness 19</name>
+		<slogan>Where You can Afford to Get Fit</slogan>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>98</merchantId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>99</merchantId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>100</merchantId>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>101</merchantId>
+		<name>BJ's Wholesale Club</name>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>102</merchantId>
+		<name>Sam's Club</name>
+		<slogan>Savings Made Simple</slogan>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>103</merchantId>
+		<name>Costco Warehouse</name>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>104</merchantId>
+		<name>ADT</name>
+		<slogan>ADT Always There</slogan>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>106</merchantId>
+		<name>Boardview Security</name>
+		<slogan>Next Generation of Brink's Home Security</slogan>
+		<logo>merch.png</logo>
+	</merchant>
+	<merchant>
+		<merchantId>107</merchantId>
+		<name>Protection One</name>
+		<slogan>Best Choice and Affordable Home and Business Security Systems</slogan>
+		<logo>merch.png</logo>
+	</merchant>
+</root>

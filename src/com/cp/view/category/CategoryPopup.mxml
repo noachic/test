@@ -16,43 +16,43 @@
 
 		<s:ArrayList id="categoryList">
 			<model:CategoryVo name="Dinning"
-							  icon="@Embed('/asset/resource.swf#cupGraphic')"
+							  icon="/asset/resource.swf#cupGraphic"
 							  />
 			<model:CategoryVo name="Pets"
-							  icon="@Embed('/asset/resource.swf#rabbitGraphic')"
+							  icon="/asset/resource.swf#rabbitGraphic"
 							  />
 			<model:CategoryVo name="Automovie"
-							  icon="@Embed('/asset/resource.swf#cinemaGraphic')"
+							  icon="/asset/resource.swf#cinemaGraphic"
 							  />
 			<model:CategoryVo name="Entertainment"
-							  icon="@Embed('/asset/resource.swf#headPhoneGraphic')"
+							  icon="/asset/resource.swf#headPhoneGraphic"
 							  />
 			<model:CategoryVo name="Beauty"
-							  icon="@Embed('/asset/resource.swf#dressGraphic')"
+							  icon="/asset/resource.swf#dressGraphic"
 							  />
 			<model:CategoryVo name="Travel"
-							  icon="@Embed('/asset/resource.swf#towerGraphic')"
+							  icon="/asset/resource.swf#towerGraphic"
 							  />
 			<model:CategoryVo name="Travel"
-							  icon="@Embed('/asset/resource.swf#towerGraphic')"
+							  icon="/asset/resource.swf#towerGraphic"
 							  />
 			<model:CategoryVo name="Dinning"
-							  icon="@Embed('/asset/resource.swf#cupGraphic')"
+							  icon="/asset/resource.swf#cupGraphic"
 							  />
 			<model:CategoryVo name="Pets"
-							  icon="@Embed('/asset/resource.swf#rabbitGraphic')"
+							  icon="/asset/resource.swf#rabbitGraphic"
 							  />
 			<model:CategoryVo name="Automovie"
-							  icon="@Embed('/asset/resource.swf#cinemaGraphic')"
+							  icon="/asset/resource.swf#cinemaGraphic"
 							  />
 			<model:CategoryVo name="Entertainment"
-							  icon="@Embed('/asset/resource.swf#headPhoneGraphic')"
+							  icon="/asset/resource.swf#headPhoneGraphic"
 							  />
 			<model:CategoryVo name="Beauty"
-							  icon="@Embed('/asset/resource.swf#dressGraphic')"
+							  icon="/asset/resource.swf#dressGraphic"
 							  />
 			<model:CategoryVo name="Travel"
-							  icon="@Embed('/asset/resource.swf#towerGraphic')"
+							  icon="/asset/resource.swf#towerGraphic"
 							  />
 		</s:ArrayList>
 

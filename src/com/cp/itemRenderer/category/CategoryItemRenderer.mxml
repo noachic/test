@@ -37,10 +37,10 @@
 						  touchBegin="currentState = 'down'"
 						  touchEnd="currentState = 'normal'"
 						  >
-		<s:BitmapImage horizontalCenter="0"
-					   verticalCenter="0"
-					   source="{category.icon}"
-					   />
+		<s:Image horizontalCenter="0"
+				 verticalCenter="0"
+				 source="{category.icon}"
+				 />
 		<s:filters>
 			<s:DropShadowFilter blurX="20"
 								blurY="20"

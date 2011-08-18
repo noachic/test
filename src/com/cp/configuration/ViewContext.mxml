@@ -6,7 +6,7 @@
 	<fx:Script>
 		<![CDATA[
 			import com.adobe.cairngorm.navigation.NavigationEvent;
-			import com.cp.view.MainView;
+			import com.cp.view.*;
 			import com.cp.view.category.CategoryPopup;
 			import com.cp.view.common.MainHeader;
 			import com.cp.view.merchant.MerchantPopup;
@@ -22,7 +22,9 @@
 		</View>
 
 		<View type="{MainHeader}">
-			<Subscribe property="currentCategory" />
+			<Subscribe objectId="currentCategory"
+					   property="currentCategory"
+					   />
 			<ManagedEvents>
 				<names>
 					<fx:String>showCategoryList</fx:String>
@@ -30,6 +32,15 @@
 					<fx:String>{NavigationEvent.NAVIGATE_TO}</fx:String>
 				</names>
 			</ManagedEvents>
+		</View>
+
+		<View type="{HomeView}">
+			<Subscribe objectId="categoryList"
+					   property="categoryList"
+					   />
+			<Subscribe objectId="merchantList"
+					   property="merchantList"
+					   />
 		</View>
 
 		<Object type="{CategoryPopup}">
