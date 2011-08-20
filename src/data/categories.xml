@@ -3,37 +3,36 @@
 	<category>
 		<categoryId>1</categoryId>
 		<name>Dining</name>
-		<icon>http://croczilla.com/bits_and_pieces/svg/samples/lion/lion.svg</icon>
-		<!--		<icon>https://github.com/noachic/test/raw/master/src/asset/resource.swf#cupGraphic</icon>-->
+		<icon>https://github.com/noachic/test/raw/master/src/asset/images/category/dinning.png</icon>
 	</category>
 	<category>
 		<categoryId>2</categoryId>
 		<name>Pets</name>
-		<icon>https://github.com/noachic/test/raw/master/src/asset/resource.swf#rabbitGraphic</icon>
+		<icon>https://github.com/noachic/test/raw/master/src/asset/images/category/pets.png</icon>
 	</category>
 	<category>
 		<categoryId>3</categoryId>
 		<name>Automotive</name>
-		<icon>https://github.com/noachic/test/raw/master/src/asset/resource.swf#cinemaGraphic</icon>
+		<icon>https://github.com/noachic/test/raw/master/src/asset/images/category/movie.png</icon>
 	</category>
 	<category>
 		<categoryId>4</categoryId>
 		<name>Entertainment</name>
-		<icon>https://github.com/noachic/test/raw/master/src/asset/resource.swf#headPhoneGraphic</icon>
+		<icon>https://github.com/noachic/test/raw/master/src/asset/images/category/entertainment.png</icon>
 	</category>
 	<category>
 		<categoryId>5</categoryId>
 		<name>Beauty</name>
-		<icon>https://github.com/noachic/test/raw/master/src/asset/resource.swf#dressGraphic</icon>
+		<icon>https://github.com/noachic/test/raw/master/src/asset/images/category/beauty.png</icon>
 	</category>
 	<category>
 		<categoryId>6</categoryId>
 		<name>Travel</name>
-		<icon>https://github.com/noachic/test/raw/master/src/asset/resource.swf#towerGraphic</icon>
+		<icon>https://github.com/noachic/test/raw/master/src/asset/images/category/travel.png</icon>
 	</category>
 	<category>
 		<categoryId>7</categoryId>
 		<name>Fashion</name>
-		<icon>https://github.com/noachic/test/raw/master/src/asset/resource.swf#dressGraphic</icon>
+		<icon>https://github.com/noachic/test/raw/master/src/asset/images/category/beauty.png</icon>
 	</category>
 </root>

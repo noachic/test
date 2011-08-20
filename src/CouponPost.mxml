@@ -17,6 +17,19 @@
 		<parsley:Configure />
 	</fx:Declarations>
 
+	<fx:Script>
+		<![CDATA[
+			import spark.components.Image;
+
+			private function creationCompleted():void
+			{
+				var i:Image = new Image();
+				this.addElement(i);
+				i.source = "https://github.com/noachic/test/raw/master/src/asset/images/category/dinning.png";
+			}
+		]]>
+	</fx:Script>
+
 	<view:AdView id="adView"
 				 width="100%"
 				 top="0"

@@ -15,9 +15,9 @@
 	<s:fill>
 		<s:SolidColor color="{color}" />
 	</s:fill>
-	<s:filters>
-		<s:BlurFilter blurX="{blur}"
-					  blurY="{blur}"
-					  />
-	</s:filters>
+	<!--	<s:filters>
+			<s:BlurFilter blurX="{blur}"
+						  blurY="{blur}"
+						  />
+		</s:filters>-->
 </s:Rect>

@@ -9,7 +9,7 @@
 	</fx:Metadata>
 
 	<fx:Declarations>
-		<s:ArrayList id="categoryList" />
+		<s:ArrayCollection id="categoryList" />
 	</fx:Declarations>
 
 	<s:layout>

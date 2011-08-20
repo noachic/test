@@ -14,47 +14,7 @@
 		<fx:Number id="right">400</fx:Number>
 
 
-		<s:ArrayList id="categoryList">
-			<model:CategoryVo name="Dinning"
-							  icon="/asset/resource.swf#cupGraphic"
-							  />
-			<model:CategoryVo name="Pets"
-							  icon="/asset/resource.swf#rabbitGraphic"
-							  />
-			<model:CategoryVo name="Automovie"
-							  icon="/asset/resource.swf#cinemaGraphic"
-							  />
-			<model:CategoryVo name="Entertainment"
-							  icon="/asset/resource.swf#headPhoneGraphic"
-							  />
-			<model:CategoryVo name="Beauty"
-							  icon="/asset/resource.swf#dressGraphic"
-							  />
-			<model:CategoryVo name="Travel"
-							  icon="/asset/resource.swf#towerGraphic"
-							  />
-			<model:CategoryVo name="Travel"
-							  icon="/asset/resource.swf#towerGraphic"
-							  />
-			<model:CategoryVo name="Dinning"
-							  icon="/asset/resource.swf#cupGraphic"
-							  />
-			<model:CategoryVo name="Pets"
-							  icon="/asset/resource.swf#rabbitGraphic"
-							  />
-			<model:CategoryVo name="Automovie"
-							  icon="/asset/resource.swf#cinemaGraphic"
-							  />
-			<model:CategoryVo name="Entertainment"
-							  icon="/asset/resource.swf#headPhoneGraphic"
-							  />
-			<model:CategoryVo name="Beauty"
-							  icon="/asset/resource.swf#dressGraphic"
-							  />
-			<model:CategoryVo name="Travel"
-							  icon="/asset/resource.swf#towerGraphic"
-							  />
-		</s:ArrayList>
+		<s:ArrayCollection id="categoryList" />
 
 		<!--
 		<util:PagedListCollectionView id="pagedCategories"

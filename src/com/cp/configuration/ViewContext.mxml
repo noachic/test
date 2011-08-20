@@ -55,6 +55,9 @@
 							type="com.cp.event.ui.CategoryListEvent"
 							/>
 			<MessageDispatcher property="dispatch" />
+			<Subscribe objectId="categoryList"
+					   property="categoryList"
+					   />
 		</Object>
 
 		<Object type="{MerchantPopup}">
