@@ -76,16 +76,14 @@
 					merchant = null;
 			}
 
-			private var showDescription:Boolean;
-
 			private function toggleState():void
 			{
-				if (showDescription)
+				if (coupon.showDescription)
 					descriptionToImage.play();
 				else
 					imageToDescription.play();
 
-				showDescription = !showDescription;
+				coupon.showDescription = !coupon.showDescription;
 			}
 		]]>
 	</fx:Script>
@@ -107,10 +105,13 @@
 		<s:SkinnableContainer width="100%"
 							  styleName="graphic scale gradientGray"
 							  >
-			<component:DropShadowLabel paddingLeft="20"
+			<component:DropShadowLabel width="100%"
+									   paddingLeft="20"
 									   paddingRight="20"
 									   verticalCenter="0"
+									   styleName="h5 gray3"
 									   text="{coupon.title}"
+									   maxDisplayedLines="1"
 									   />
 		</s:SkinnableContainer>
 
@@ -144,11 +145,21 @@
 									  styleName="graphic scale fillGrey3 maskRound"
 									  visible="false"
 									  >
+					<s:layout>
+						<s:VerticalLayout paddingBottom="20"
+										  paddingLeft="20"
+										  paddingRight="20"
+										  paddingTop="20"
+										  gap="20"
+										  />
+					</s:layout>
+
+					<component:DropShadowLabel styleName="h5 gray2"
+											   text="Terms of Use"
+											   />
+
 					<component:DropShadowLabel width="100%"
-											   paddingBottom="10"
-											   paddingLeft="10"
-											   paddingRight="10"
-											   paddingTop="10"
+											   styleName="h6 gray3"
 											   text="{coupon.offerTerm}"
 											   />
 				</s:SkinnableContainer>

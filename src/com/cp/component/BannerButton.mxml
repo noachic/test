@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<s:SkinnableContainer styleName="graphic scale bannerButtonBlack"
-					  styleName.down="graphic scale bannerButtonOrange"
-					  touchBegin="currentState = 'down'"
-					  touchEnd="currentState = 'normal'"
-					  xmlns:component="com.cp.component.*"
+<s:SkinnableContainer xmlns:component="com.cp.component.*"
 					  xmlns:fx="http://ns.adobe.com/mxml/2009"
 					  xmlns:mx="library://ns.adobe.com/flex/mx"
 					  xmlns:s="library://ns.adobe.com/flex/spark"
+					  styleName="graphic scale bannerButtonBlack"
+					  styleName.down="graphic scale bannerButtonOrange"
+					  touchBegin="currentState = 'down'"
+					  touchEnd="currentState = 'normal'"
 					  >
 	<fx:Declarations>
 		<fx:Object id="icon" />
@@ -22,9 +22,12 @@
 			  left="50"
 			  right="50"
 			  verticalAlign="middle"
+			  gap="20"
 			  >
 		<s:BitmapImage source="{icon}" />
-		<component:DropShadowLabel text="{label}" />
+		<component:DropShadowLabel styleName="p3 white"
+								   text="{label}"
+								   />
 	</s:HGroup>
 
 </s:SkinnableContainer>

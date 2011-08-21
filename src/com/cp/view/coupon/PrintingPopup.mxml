@@ -74,20 +74,26 @@
 									  />
 				</s:layout>
 
-				<popup:DropShadowLabel text="Your coupon is now available for pickup from the print window below." />
+				<popup:DropShadowLabel styleName="h5 gray3"
+									   text="Your coupon is now available for pickup from the print window below."
+									   />
 
-				<s:HGroup gap="10">
+				<s:HGroup verticalAlign="middle"
+						  gap="10"
+						  >
 					<s:SkinnableContainer styleName="graphic gradientBlackLongButton"
 										  touchTap="dispatch(PrintCouponEvent.completePrint())"
 										  >
 						<popup:DropShadowLabel horizontalCenter="0"
 											   verticalCenter="0"
+											   styleName="p2 white"
 											   text="Close"
 											   />
 					</s:SkinnableContainer>
 
 					<popup:DropShadowLabel horizontalCenter="0"
 										   verticalCenter="0"
+										   styleName="h4 gray3"
 										   text="in {countdownTimer.countDown} seconds"
 										   />
 				</s:HGroup>

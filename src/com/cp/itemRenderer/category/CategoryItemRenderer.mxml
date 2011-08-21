@@ -49,9 +49,8 @@
 		</s:filters>
 	</s:SkinnableContainer>
 
-	<s:Label fontSize="40"
-			 fontWeight="bold"
-			 text="{category.name}"
-			 />
+	<component:DropShadowLabel styleName="h4 gray2"
+							   text="{category.name}"
+							   />
 
 </s:ItemRenderer>

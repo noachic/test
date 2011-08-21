@@ -28,6 +28,8 @@ package com.cp.model.coupon
 
 		public var merchantId:Number;
 
+		public var showDescription:Boolean;
+
 		public static function makePrimaryKey(couponId:Number):Object
 		{
 			return { "couponId": couponId };

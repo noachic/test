@@ -26,6 +26,9 @@
 			<Subscribe objectId="currentCategory"
 					   property="currentCategory"
 					   />
+			<Subscribe objectId="currentMerchant"
+					   property="currentMerchant"
+					   />
 			<ManagedEvents>
 				<names>
 					<fx:String>showCategoryList</fx:String>

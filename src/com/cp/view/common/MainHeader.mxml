@@ -4,6 +4,7 @@
 		  xmlns:mx="library://ns.adobe.com/flex/mx"
 		  xmlns:s="library://ns.adobe.com/flex/spark"
 		  xmlns:category="com.cp.model.category.*"
+		  xmlns:merchant="com.cp.model.merchant.*"
 		  height="97"
 		  paddingLeft="10"
 		  verticalAlign="middle"
@@ -11,6 +12,7 @@
 
 	<fx:Declarations>
 		<category:CategoryVo id="currentCategory" />
+		<merchant:MerchantVo id="currentMerchant" />
 	</fx:Declarations>
 
 	<fx:Script>
@@ -46,14 +48,14 @@
 		</s:SkinnableContainer>
 
 		<component:BannerButton icon="@Embed('/asset/resource.swf#categoryIcon')"
-								label="Select Category"
+								label="{currentCategory == null ? 'Select Category' : currentCategory.name}"
 								depth="2"
 								touchTap="dispatchEvent(CategoryListEvent.showCategoryList())"
 								/>
 
 		<component:BannerButton icon="@Embed('/asset/resource.swf#cupIcon')"
 								includeInLayout="{currentCategory != null}"
-								label="Select Merchant"
+								label="{currentMerchant == null ? 'Select Merchant' : currentMerchant.name}"
 								depth="1"
 								touchTap="dispatchEvent(MerchantListEvent.showMerchantList())"
 								visible="{currentCategory != null}"

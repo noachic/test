@@ -20,8 +20,8 @@
 	<s:filters>
 		<s:DropShadowFilter id="dropShadow"
 							color="{getStyle('textDropShadowColor') || 0xffffff}"
-							alpha="{getStyle('textDropShadowAlpha') || 1}"
-							angle="{getStyle('textDropShadowAngle') || 270}"
+							alpha="{getStyle('textDropShadowAlpha') || 0.9}"
+							angle="{getStyle('textDropShadowAngle') || 90}"
 							blurX="{getStyle('blur') || 1}"
 							blurY="{getStyle('blur') || 1}"
 							distance="{getStyle('distance') || 1}"

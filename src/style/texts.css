@@ -1,0 +1,111 @@
+/* CSS file */
+@namespace s "library://ns.adobe.com/flex/spark";
+@namespace mx "library://ns.adobe.com/flex/mx";
+
+@font-face
+{
+	fontFamily: "Gotham Bold";
+	src: url("/asset/font/Gotham-Bold.otf");
+	embedAsCFF: true;
+}
+
+@font-face
+{
+	fontFamily: "Gotham Book";
+	src: url("/asset/font/Gotham-Book.otf");
+	embedAsCFF: true;
+}
+
+global {
+	fontFamily: "Gotham Bold";
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	fontFamily: "Gotham Bold";
+}
+
+.h1 {
+	fontSize: 48;
+}
+
+.h2 {
+	fontSize: 32;
+}
+
+.h3 {
+	fontSize: 28;
+}
+
+.h4 {
+	fontSize: 24;
+}
+
+.h5 {
+	fontSize: 20;
+}
+
+.h6 {
+	fontSize: 16;
+}
+
+.p1, .p2, .p3, .p4, .p5, .p6 {
+	fontFamily: "Gotham Book";
+}
+
+.p1 {
+	fontSize: 32;
+}
+
+.p2 {
+	fontSize: 28;
+}
+
+.p3 {
+	fontSize: 24;
+}
+
+.p4 {
+	fontSize: 20;
+}
+
+.p5 {
+	fontSize: 16;
+}
+
+.p6 {
+	fontSize: 12;
+}
+
+
+.gray1 {
+	color: #161616;
+}
+
+.gray2 {
+	color: #333333;
+}
+
+.gray3 {
+	color: #484848;
+}
+
+.gray4 {
+	color: #666666;
+}
+
+.gray5 {
+	color: #999999;
+}
+
+.gray6 {
+	color: #C0C0C0;
+}
+
+.gray7 {
+	color: #E0E0E0;
+}
+
+.white {
+	color: #FFFFFF;
+	textDropShadowColor: #000000;
+}

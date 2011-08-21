@@ -10,25 +10,13 @@
 					   >
 
 	<fx:Style source="style/global.css" />
+	<fx:Style source="style/texts.css" />
 	<fx:Style source="style/containers.css" />
 
 	<fx:Declarations>
 		<configuration:MainContextBuilder viewRoot="{this}" />
 		<parsley:Configure />
 	</fx:Declarations>
-
-	<fx:Script>
-		<![CDATA[
-			import spark.components.Image;
-
-			private function creationCompleted():void
-			{
-				var i:Image = new Image();
-				this.addElement(i);
-				i.source = "https://github.com/noachic/test/raw/master/src/asset/images/category/dinning.png";
-			}
-		]]>
-	</fx:Script>
 
 	<view:AdView id="adView"
 				 width="100%"
