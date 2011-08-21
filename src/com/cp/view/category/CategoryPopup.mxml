@@ -6,6 +6,7 @@
 						xmlns:model="com.cp.model.category.*"
 						xmlns:util="com.cp.util.*"
 						xmlns:category="com.cp.view.category.*"
+						xmlns:mx="library://ns.adobe.com/flex/mx"
 						center="false"
 						>
 
@@ -14,7 +15,7 @@
 		<fx:Number id="right">400</fx:Number>
 
 
-		<s:ArrayCollection id="categoryList" />
+		<mx:ListCollectionView id="categoryList" />
 
 		<!--
 		<util:PagedListCollectionView id="pagedCategories"

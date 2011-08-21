@@ -8,11 +8,19 @@ package com.cp.model.merchant
 	[Bindable]
 	public class MerchantVo extends EventDispatcher implements IValueObject
 	{
+
+		[PrimaryKey]
+		[XPath("merchantId")]
 		public var merchantId:Number;
 
+		[XPath("name")]
 		public var name:String;
 
+		[XPath("logo")]
 		public var logo:String;
+
+		[XPath("categoryId")]
+		public var categoryId:Number;
 
 
 		public static function makePrimaryKey(merchantId:Number):Object
@@ -40,7 +48,7 @@ import com.cp.model.merchant.MerchantVo;
 class MerchantVoXMLCoDec implements IXMLCoDec
 {
 	private var fieldMap:Object = { "merchantId": "merchantId", "name": "name",
-									"logo": "logo" };
+									"logo": "logo", "categoryId": "categoryId" };
 
 
 	public function get rootName():String

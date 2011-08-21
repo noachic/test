@@ -20,14 +20,27 @@
 
 	<common:MainHeader />
 
-	<view:HomeView width="100%"
-				   height="100%"
-				   includeIn="home"
-				   />
+	<s:HGroup width="100%"
+			  height="100%"
+			  paddingBottom="10"
+			  paddingLeft="10"
+			  paddingRight="10"
+			  paddingTop="10"
+			  gap="10"
+			  >
+		<view:HomeView width="100%"
+					   height="100%"
+					   includeIn="home"
+					   />
 
-	<view:CouponView width="100%"
-					 height="100%"
-					 includeIn="coupon"
-					 />
+		<view:CouponView width="100%"
+						 height="100%"
+						 includeIn="coupon"
+						 />
+
+		<view:PromotionView width="360"
+							height="100%"
+							/>
+	</s:HGroup>
 
 </s:SkinnableContainer>

@@ -41,6 +41,15 @@
 			<Subscribe objectId="merchantList"
 					   property="merchantList"
 					   />
+			<Subscribe objectId="couponList"
+					   property="couponList"
+					   />
+		</View>
+
+		<View type="{CouponView}">
+			<Subscribe objectId="filteredCouponList"
+					   property="couponList"
+					   />
 		</View>
 
 		<Object type="{CategoryPopup}">
@@ -72,6 +81,9 @@
 							type="com.cp.event.ui.MerchantListEvent"
 							/>
 			<MessageDispatcher property="dispatch" />
+			<Subscribe objectId="categorizedMerchantList"
+					   property="merchantList"
+					   />
 		</Object>
 	</fx:Declarations>
 </fx:Object>

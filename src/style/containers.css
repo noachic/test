@@ -77,6 +77,48 @@ s|Application.luminosityMask, s|SkinnableContainer.luminosityMask, s|SkinnableDa
 	background-image: Embed('/asset/resource.swf#shadowedWhiteBackground');
 }
 
+.shadowBackground {
+	background-image: Embed('/asset/resource.swf#shadowBackground');
+}
+
+.gradientGray {
+	background-image: Embed('/asset/resource.swf#gradientGray');
+}
+
+.tripes {
+	background-image: Embed('/asset/resource.swf#tripes');
+}
+
+.gradientBlackButton {
+	background-image: Embed('/asset/resource.swf#gradientBlackButton');
+}
+
+.transparentBackground {
+	background-image: Embed('/asset/resource.swf#transparentBackground');
+}
+
+.whiteBackground2 {
+	background-image: Embed('/asset/resource.swf#whiteBackground2');
+}
+
+.diagonalCornerMask {
+	background-image: Embed('/asset/resource.swf#diagonalCornerMask');
+}
+
+/**
+from src
+**/
+.fillGrey1 {
+	background-image: Embed('/asset/panel_resource.swf#fillGrey1');
+}
+
+.fillGrey2 {
+	background-image: Embed('/asset/panel_resource.swf#fillGrey2');
+}
+
+.fillGrey3 {
+	background-image: Embed('/asset/panel_resource.swf#fillGrey3');
+}
 
 /*
 Masks

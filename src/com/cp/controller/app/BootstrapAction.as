@@ -1,6 +1,7 @@
 package com.cp.controller.app
 {
 	import com.cp.event.business.category.GetCategoryListEvent;
+	import com.cp.event.business.coupon.GetCouponListEvent;
 	import com.cp.event.business.merchant.GetMerchantListEvent;
 
 	import flash.ui.Multitouch;
@@ -25,6 +26,7 @@ package com.cp.controller.app
 		{
 			dispatch(new GetCategoryListEvent());
 			dispatch(new GetMerchantListEvent());
+			dispatch(new GetCouponListEvent());
 		}
 	}
 }

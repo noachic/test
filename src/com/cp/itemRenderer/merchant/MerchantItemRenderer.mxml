@@ -19,18 +19,16 @@
 				destination="merchant"
 				/>
 
-	<s:SkinnableContainer right="{count.width/2}"
+	<s:SkinnableContainer left="0"
+						  right="{count.width/2}"
 						  top="{count.height/2}"
-						  styleName="graphic shadowedWhiteBackground"
+						  bottom="0"
+						  styleName="graphic scale shadowedWhiteBackground"
 						  >
-		<s:Image width="200"
-				 height="200"
-				 left="10"
-				 right="10"
-				 top="10"
-				 bottom="10"
-				 source="{merchant.logo}"
-				 />
+		<s:BitmapImage horizontalCenter="0"
+					   verticalCenter="0"
+					   source="https://github.com/noachic/test/raw/master/src/asset/images/coupon/{merchant.merchantId}/merch.png"
+					   />
 	</s:SkinnableContainer>
 
 	<s:Image id="count"

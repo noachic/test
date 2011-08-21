@@ -9,11 +9,6 @@
 
 	<fx:Script>
 		<![CDATA[
-			import com.cp.controller.category.GetCategoryListAction;
-			import com.cp.controller.category.SelectCategoryAction;
-			import com.cp.controller.merchant.GetMerchantListAction;
-			import com.cp.controller.merchant.SelectMerchantAction;
-
 			import mx.resources.IResourceManager;
 			import mx.resources.ResourceManager;
 
@@ -31,11 +26,20 @@
 		<app:ApplicationObserver />
 
 		<Object type="com.cp.model.common.MainModel">
+			<Publish objectId="categoryList"
+					 property="categoryList"
+					 />
 			<Publish objectId="merchantList"
 					 property="merchantList"
 					 />
-			<Publish objectId="categoryList"
-					 property="categoryList"
+			<Publish objectId="couponList"
+					 property="couponList"
+					 />
+			<Publish objectId="categorizedMerchantList"
+					 property="categorizedMerchantList"
+					 />
+			<Publish objectId="filteredCouponList"
+					 property="filteredCouponList"
 					 />
 			<Publish objectId="currentCategory"
 					 property="currentCategory"
@@ -45,27 +49,37 @@
 					 />
 		</Object>
 
-		<Object type="{GetCategoryListAction}">
+		<Object type="com.cp.controller.category.GetCategoryListAction">
 			<MessageHandler method="getCategoryList" />
 			<Property name="model"
-					  typeRef="{MainModel}"
+					  typeRef="com.cp.model.common.MainModel"
 					  />
 			<Property name="mockData"
 					  typeRef="{MockData}"
 					  />
 		</Object>
 
-		<Object type="{GetMerchantListAction}">
+		<Object type="com.cp.controller.merchant.GetMerchantListAction">
 			<MessageHandler method="getMerchantList" />
 			<Property name="model"
-					  typeRef="{MainModel}"
+					  typeRef="com.cp.model.common.MainModel"
 					  />
 			<Property name="mockData"
 					  typeRef="{MockData}"
 					  />
 		</Object>
 
-		<Object type="{SelectCategoryAction}">
+		<Object type="com.cp.controller.coupon.GetCouponListAction">
+			<MessageHandler method="getCouponList" />
+			<Property name="model"
+					  typeRef="com.cp.model.common.MainModel"
+					  />
+			<Property name="mockData"
+					  typeRef="{MockData}"
+					  />
+		</Object>
+
+		<Object type="com.cp.controller.category.SelectCategoryAction">
 			<MessageHandler method="selectCategory"
 							selector="selectCategory"
 							/>
@@ -75,7 +89,7 @@
 					  />
 		</Object>
 
-		<Object type="{SelectMerchantAction}">
+		<Object type="com.cp.controller.merchant.SelectMerchantAction">
 			<MessageHandler method="selectMerchant"
 							selector="selectMerchant"
 							/>

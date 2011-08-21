@@ -4,8 +4,9 @@
 		  xmlns:mx="library://ns.adobe.com/flex/mx"
 		  >
 	<fx:Declarations>
-		<s:ArrayCollection id="categoryList" />
-		<s:ArrayCollection id="merchantList" />
+		<mx:ListCollectionView id="categoryList" />
+		<mx:ListCollectionView id="merchantList" />
+		<mx:ListCollectionView id="couponList" />
 	</fx:Declarations>
 
 	<s:List width="100%"
@@ -17,4 +18,11 @@
 			height="100%"
 			dataProvider="{merchantList}"
 			/>
+
+	<s:List width="100%"
+			height="100%"
+			dataProvider="{couponList}"
+			/>
+
+	<s:TextInput text="{couponList.length}" />
 </s:HGroup>

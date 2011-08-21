@@ -8,6 +8,7 @@
 
 	<cairngorm:CairngormNavigationSupport />
 
+	<!--<spicefactory:PropertiesFile file="external.properties" />-->
 	<spicefactory:FlexConfig type="{BusinessContext}" />
 	<spicefactory:FlexConfig type="{NavigationContext}" />
 	<spicefactory:FlexConfig type="{ViewContext}" />

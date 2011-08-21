@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <s:SkinnableContainer xmlns:fx="http://ns.adobe.com/mxml/2009"
 					  xmlns:s="library://ns.adobe.com/flex/spark"
+					  xmlns:mx="library://ns.adobe.com/flex/mx"
 					  styleName="graphic scale grayBackground"
 					  >
 
@@ -9,7 +10,7 @@
 	</fx:Metadata>
 
 	<fx:Declarations>
-		<s:ArrayCollection id="categoryList" />
+		<mx:ListCollectionView id="categoryList" />
 	</fx:Declarations>
 
 	<s:layout>

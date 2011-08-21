@@ -41,12 +41,12 @@
 					   verticalCenter="0"
 					   source="{category.icon}"
 					   />
-		<!--	<s:filters>
-				<s:DropShadowFilter blurX="20"
-									blurY="20"
-									distance="0"
-									/>
-			</s:filters>-->
+		<s:filters>
+			<s:DropShadowFilter blurX="20"
+								blurY="20"
+								distance="0"
+								/>
+		</s:filters>
 	</s:SkinnableContainer>
 
 	<s:Label fontSize="40"

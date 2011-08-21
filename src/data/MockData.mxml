@@ -8,5 +8,9 @@
 		<fx:XML id="merchantList"
 				source="merchants.xml"
 				/>
+
+		<fx:XML id="couponList"
+				source="coupons.xml"
+				/>
 	</fx:Declarations>
 </fx:Object>

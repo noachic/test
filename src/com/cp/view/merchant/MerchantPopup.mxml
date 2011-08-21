@@ -4,7 +4,7 @@
 						xmlns:s="library://ns.adobe.com/flex/spark"
 						xmlns:common="com.cp.component.common.*"
 						xmlns:merchant="com.cp.view.merchant.*"
-						xmlns:model="com.cp.model.merchant.*"
+						xmlns:mx="library://ns.adobe.com/flex/mx"
 						center="false"
 						>
 
@@ -13,17 +13,7 @@
 		<fx:Number id="right">400</fx:Number>
 
 
-		<s:ArrayList id="merchantList">
-			<model:MerchantVo name="Merchant 1" />
-			<model:MerchantVo name="Merchant 2" />
-			<model:MerchantVo name="Merchant 3" />
-			<model:MerchantVo name="Merchant 4" />
-			<model:MerchantVo name="Merchant 5" />
-			<model:MerchantVo name="Merchant 6" />
-			<model:MerchantVo name="Merchant 7" />
-			<model:MerchantVo name="Merchant 8" />
-			<model:MerchantVo name="Merchant 9" />
-		</s:ArrayList>
+		<mx:ListCollectionView id="merchantList" />
 	</fx:Declarations>
 
 	<fx:Script>
