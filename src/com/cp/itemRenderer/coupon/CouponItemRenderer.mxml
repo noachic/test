@@ -63,6 +63,7 @@
 
 	<fx:Script>
 		<![CDATA[
+			import com.cp.event.ui.PrintCouponEvent;
 			import com.cp.framework.vomanager.VOManager;
 
 			override public function set data(value:Object):void
@@ -172,8 +173,9 @@
 							   source="https://github.com/noachic/test/raw/master/src/asset/images/coupon/{merchant.merchantId}/{merchant.logo}"
 							   >
 					<s:filters>
-						<s:DropShadowFilter blurX="20"
-											blurY="20"
+						<s:DropShadowFilter alpha="0.4"
+											blurX="10"
+											blurY="10"
 											distance="0"
 											/>
 					</s:filters>
@@ -181,11 +183,20 @@
 
 				<s:Rect height="100%" />
 
-				<s:SkinnableContainer styleName="graphic gradientBlackButton">
+				<s:SkinnableContainer styleName="graphic gradientBlackButton"
+									  touchTap="dispatchEvent(PrintCouponEvent.startPrint(coupon))"
+									  >
 					<s:BitmapImage horizontalCenter="0"
 								   verticalCenter="0"
 								   source="@Embed('/asset/resource.swf#printIcon')"
 								   />
+					<s:filters>
+						<s:DropShadowFilter alpha="0.4"
+											blurX="10"
+											blurY="10"
+											distance="0"
+											/>
+					</s:filters>
 				</s:SkinnableContainer>
 			</s:VGroup>
 		</s:SkinnableContainer>

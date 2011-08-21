@@ -9,6 +9,7 @@
 			import com.cp.view.*;
 			import com.cp.view.category.CategoryPopup;
 			import com.cp.view.common.MainHeader;
+			import com.cp.view.coupon.PrintingPopup;
 			import com.cp.view.merchant.MerchantPopup;
 		]]>
 	</fx:Script>
@@ -50,6 +51,11 @@
 			<Subscribe objectId="filteredCouponList"
 					   property="couponList"
 					   />
+			<ManagedEvents>
+				<names>
+					<fx:String>startPrint</fx:String>
+				</names>
+			</ManagedEvents>
 		</View>
 
 		<Object type="{CategoryPopup}">
@@ -84,6 +90,18 @@
 			<Subscribe objectId="categorizedMerchantList"
 					   property="merchantList"
 					   />
+		</Object>
+
+		<Object type="{PrintingPopup}">
+			<MessageHandler method="show"
+							selector="startPrint"
+							type="com.cp.event.ui.PrintCouponEvent"
+							/>
+			<MessageHandler method="hide"
+							selector="completePrint"
+							type="com.cp.event.ui.PrintCouponEvent"
+							/>
+			<MessageDispatcher property="dispatch" />
 		</Object>
 	</fx:Declarations>
 </fx:Object>

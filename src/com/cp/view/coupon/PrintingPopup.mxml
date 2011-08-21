@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<popup:PopUpWrapperBase xmlns:fx="http://ns.adobe.com/mxml/2009"
+						xmlns:popup="com.cp.component.*"
+						xmlns:s="library://ns.adobe.com/flex/spark"
+						xmlns:coupon="com.cp.model.coupon.*"
+						xmlns:util="com.cp.util.*"
+						center="false"
+						>
+
+	<fx:Declarations>
+		<fx:Number id="top">90</fx:Number>
+		<fx:Number id="right">400</fx:Number>
+
+		<util:CountDownTimer id="countdownTimer"
+							 countDownComplete="dispatch(PrintCouponEvent.completePrint())"
+							 duration="10000"
+							 interval="1000"
+							 />
+
+		<coupon:CouponVo id="coupon" />
+	</fx:Declarations>
+
+	<fx:Script>
+		<![CDATA[
+			import com.cp.event.ui.PrintCouponEvent;
+
+			import flash.utils.setTimeout;
+
+			import mx.core.UIComponent;
+
+			public var dispatch:Function;
+
+			public function show(event:PrintCouponEvent):void
+			{
+				coupon = event.coupon;
+				open = true;
+
+				countdownTimer.run();
+			}
+
+			public function hide(event:PrintCouponEvent):void
+			{
+				open = false;
+			}
+		]]>
+	</fx:Script>
+
+	<s:Group width="{UIComponent(parent).width}"
+			 height="{UIComponent(parent).height}"
+			 >
+		<popup:ModalLayer height="1000"
+						  bottom="0"
+						  />
+
+		<s:SkinnableContainer left="90"
+							  right="{right}"
+							  top="{top}"
+							  bottom="80"
+							  styleName="graphic scale fillGrey3 maskBottom"
+							  >
+			<s:BitmapImage width="100%"
+						   source="@Embed('/asset/printBackground.png')"
+						   />
+
+			<s:SkinnableContainer width="100%"
+								  bottom="0"
+								  styleName="graphic scale fillGrey3"
+								  >
+				<s:layout>
+					<s:VerticalLayout horizontalAlign="center"
+									  paddingBottom="40"
+									  paddingTop="40"
+									  gap="20"
+									  />
+				</s:layout>
+
+				<popup:DropShadowLabel text="Your coupon is now available for pickup from the print window below." />
+
+				<s:HGroup gap="10">
+					<s:SkinnableContainer styleName="graphic gradientBlackLongButton"
+										  touchTap="dispatch(PrintCouponEvent.completePrint())"
+										  >
+						<popup:DropShadowLabel horizontalCenter="0"
+											   verticalCenter="0"
+											   text="Close"
+											   />
+					</s:SkinnableContainer>
+
+					<popup:DropShadowLabel horizontalCenter="0"
+										   verticalCenter="0"
+										   text="in {countdownTimer.countDown} seconds"
+										   />
+				</s:HGroup>
+
+				<s:filters>
+					<s:DropShadowFilter alpha="0.4"
+										angle="90"
+										blurX="0"
+										blurY="5"
+										distance="5"
+										inner="true"
+										/>
+				</s:filters>
+			</s:SkinnableContainer>
+
+		</s:SkinnableContainer>
+
+	</s:Group>
+</popup:PopUpWrapperBase>
