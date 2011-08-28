@@ -8,9 +8,8 @@
 		<mx:ListCollectionView id="couponList" />
 	</fx:Declarations>
 
-	<s:Scroller height="100%"
-				left="0"
-				right="20"
+	<s:Scroller width="100%"
+				height="100%"
 				interactionMode="touch"
 				skinClass="com.cp.skin.common.NoBarScroller"
 				>
@@ -24,10 +23,10 @@
 							  paddingRight="40"
 							  paddingTop="40"
 							  verticalGap="40"
-							  columnWidth="480"
+							  columnWidth="340"
 							  orientation="rows"
 							  requestedColumnCount="2"
-							  rowHeight="320"
+							  rowHeight="240"
 							  useVirtualLayout="true"
 							  />
 			</s:layout>
