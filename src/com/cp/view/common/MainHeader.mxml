@@ -5,9 +5,6 @@
 		  xmlns:s="library://ns.adobe.com/flex/spark"
 		  xmlns:category="com.cp.model.category.*"
 		  xmlns:merchant="com.cp.model.merchant.*"
-		  height="97"
-		  paddingLeft="10"
-		  verticalAlign="middle"
 		  >
 
 	<fx:Declarations>
@@ -23,9 +20,7 @@
 		]]>
 	</fx:Script>
 
-	<s:SkinnableContainer styleName="graphic scale bannerBackground"
-						  depth="3"
-						  >
+	<s:SkinnableContainer styleName="graphic scale bannerBackground">
 		<s:layout>
 			<s:HorizontalLayout paddingLeft="3"
 								paddingRight="3"

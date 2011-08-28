@@ -4,20 +4,20 @@
 		xmlns:mx="library://ns.adobe.com/flex/mx"
 		width="100%"
 		height="100%"
-		alpha="0.7"
+		alpha="0.5"
 		>
 
 	<fx:Declarations>
-		<fx:Object id="color">0x000000</fx:Object>
-		<fx:Number id="blur">0</fx:Number>
+		<fx:Object id="color">0x333333</fx:Object>
+		<fx:Number id="blur">5</fx:Number>
 	</fx:Declarations>
 
 	<s:fill>
 		<s:SolidColor color="{color}" />
 	</s:fill>
-	<!--	<s:filters>
-			<s:BlurFilter blurX="{blur}"
-						  blurY="{blur}"
-						  />
-		</s:filters>-->
+	<s:filters>
+		<s:BlurFilter blurX="{blur}"
+					  blurY="{blur}"
+					  />
+	</s:filters>
 </s:Rect>

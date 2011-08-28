@@ -8,6 +8,11 @@
 	</fx:Metadata>
 
 
+	<s:VScrollBar id="verticalScrollBar"
+				  scaleX="0.0001"
+				  visible="false"
+				  />
+
 	<!---  A horizontal scrollbar that lets you control the portion of data that is displayed
 			when there is too much data to fit horizontally in a display area.
 			The Scroller determines whether the horizontal ScrollBar is visible. -->

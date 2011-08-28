@@ -32,14 +32,18 @@
 						  />
 	</s:layout>
 
-	<s:SkinnableContainer styleName.down="graphic orangeButton"
-						  styleName.normal="graphic blackButton"
-						  touchBegin="currentState = 'down'"
-						  touchEnd="currentState = 'normal'"
-						  >
+	<s:Group touchBegin="currentState = 'down'"
+			 touchEnd="currentState = 'normal'"
+			 >
+		<s:BitmapImage source.down="@Embed('/asset/resource.swf#orangeButton')"
+					   source.normal="@Embed('/asset/resource.swf#blackButton')"
+					   />
 		<s:BitmapImage horizontalCenter="0"
 					   verticalCenter="0"
+					   scaleX="0.8"
+					   scaleY="0.8"
 					   source="{category.icon}"
+					   smooth="true"
 					   />
 		<s:filters>
 			<s:DropShadowFilter blurX="20"
@@ -47,7 +51,7 @@
 								distance="0"
 								/>
 		</s:filters>
-	</s:SkinnableContainer>
+	</s:Group>
 
 	<component:DropShadowLabel styleName="h4 gray2"
 							   text="{category.name}"

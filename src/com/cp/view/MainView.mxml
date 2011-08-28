@@ -1,26 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<s:SkinnableContainer xmlns:common="com.cp.view.common.*"
-					  xmlns:fx="http://ns.adobe.com/mxml/2009"
-					  xmlns:s="library://ns.adobe.com/flex/spark"
-					  xmlns:view="com.cp.view.*"
-					  styleName="graphic scale appBackground"
-					  >
-
-	<fx:Declarations>
-	</fx:Declarations>
+<s:Group xmlns:common="com.cp.view.common.*"
+		 xmlns:fx="http://ns.adobe.com/mxml/2009"
+		 xmlns:s="library://ns.adobe.com/flex/spark"
+		 xmlns:view="com.cp.view.*"
+		 >
 
 	<s:states>
 		<s:State name="home" />
 		<s:State name="coupon" />
 	</s:states>
 
-	<s:layout>
-		<s:VerticalLayout gap="0" />
-	</s:layout>
+	<s:BitmapImage width="100%"
+				   height="100%"
+				   source="@Embed('/asset/background.png')"
+				   />
 
-	<common:MainHeader />
-
-	<s:HGroup width="100%"
+	<s:VGroup width="100%"
 			  height="100%"
 			  paddingBottom="10"
 			  paddingLeft="10"
@@ -28,19 +23,26 @@
 			  paddingTop="10"
 			  gap="10"
 			  >
-		<view:HomeView width="100%"
-					   height="100%"
-					   includeIn="home"
-					   />
+		<common:MainHeader />
 
-		<view:CouponView width="100%"
-						 height="100%"
-						 includeIn="coupon"
-						 />
+		<s:HGroup width="100%"
+				  height="100%"
+				  gap="10"
+				  >
+			<view:HomeView width="100%"
+						   height="100%"
+						   includeIn="home"
+						   />
 
-		<view:PromotionView width="360"
-							height="100%"
-							/>
-	</s:HGroup>
+			<view:CouponView width="100%"
+							 height="100%"
+							 includeIn="coupon"
+							 />
 
-</s:SkinnableContainer>
+			<view:PromotionView width="250"
+								height="100%"
+								/>
+		</s:HGroup>
+	</s:VGroup>
+
+</s:Group>

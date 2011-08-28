@@ -9,6 +9,8 @@
 					>
 	<fx:Script>
 		<![CDATA[
+			import com.cp.view.MainView;
+
 			import mx.resources.IResourceManager;
 
 			import org.spicefactory.parsley.core.context.Context;
@@ -20,8 +22,15 @@
 			[Bindable]
 			[Inject]
 			public var resourceManager:IResourceManager;
+
+			[Bindable]
+			public var mainView:MainView;
 		]]>
 	</fx:Script>
+
+	<fx:Binding source="(parent as CouponPost).mainView"
+				destination="mainView"
+				/>
 
 	<popup:behaviors>
 		<popup:AddPopUpToParsleyContext context="{context}" />

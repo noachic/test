@@ -25,27 +25,27 @@ global {
 }
 
 .h1 {
-	fontSize: 48;
+	fontSize: 34;
 }
 
 .h2 {
-	fontSize: 32;
+	fontSize: 30;
 }
 
 .h3 {
-	fontSize: 28;
+	fontSize: 26;
 }
 
 .h4 {
-	fontSize: 24;
+	fontSize: 22;
 }
 
 .h5 {
-	fontSize: 20;
+	fontSize: 18;
 }
 
 .h6 {
-	fontSize: 16;
+	fontSize: 14;
 }
 
 .p1, .p2, .p3, .p4, .p5, .p6 {

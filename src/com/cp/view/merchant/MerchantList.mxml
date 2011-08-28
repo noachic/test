@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<s:SkinnableContainer xmlns:fx="http://ns.adobe.com/mxml/2009"
-					  xmlns:s="library://ns.adobe.com/flex/spark"
-					  xmlns:mx="library://ns.adobe.com/flex/mx"
-					  styleName="graphic scale grayBackground"
-					  >
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+		 xmlns:s="library://ns.adobe.com/flex/spark"
+		 xmlns:mx="library://ns.adobe.com/flex/mx"
+		 >
 
 	<fx:Metadata>
 		[Event(name="selectMerchant", type="com.cp.event.ui.MerchantListEvent")]
@@ -13,20 +12,18 @@
 		<mx:ListCollectionView id="merchantList" />
 	</fx:Declarations>
 
-
-	<s:layout>
-		<s:VerticalLayout horizontalAlign="center"
-						  paddingBottom="90"
-						  paddingLeft="130"
-						  paddingRight="130"
-						  paddingTop="90"
-						  gap="50"
-						  />
-	</s:layout>
-
+	<s:BitmapImage width="100%"
+				   height="100%"
+				   source="@Embed('/asset/resource.swf#grayBackground')"
+				   fillMode="scale"
+				   />
 
 	<s:Scroller width="100%"
 				height="100%"
+				left="40"
+				right="40"
+				top="40"
+				bottom="40"
 				interactionMode="touch"
 				skinClass="com.cp.skin.common.NoBarScroller"
 				>
@@ -35,9 +32,12 @@
 					 itemRenderer="com.cp.itemRenderer.merchant.MerchantItemRenderer"
 					 >
 			<s:layout>
-				<s:TileLayout horizontalGap="120"
-							  paddingTop="10"
+				<s:TileLayout paddingBottom="20"
+							  paddingLeft="20"
+							  paddingRight="20"
+							  paddingTop="20"
 							  verticalGap="60"
+							  columnAlign="justifyUsingGap"
 							  orientation="columns"
 							  requestedColumnCount="3"
 							  requestedRowCount="2"
@@ -52,4 +52,4 @@
 	skinClass="com.cp.skin.common.PageListSkin"
 	/>
 	-->
-</s:SkinnableContainer>
+</s:Group>

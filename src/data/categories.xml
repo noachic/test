@@ -35,4 +35,19 @@
 		<name>Fashion</name>
 		<icon>https://github.com/noachic/test/raw/master/src/asset/images/category/beauty.png</icon>
 	</category>
+	<category>
+		<categoryId>8</categoryId>
+		<name>Entertainment</name>
+		<icon>https://github.com/noachic/test/raw/master/src/asset/images/category/entertainment.png</icon>
+	</category>
+	<category>
+		<categoryId>9</categoryId>
+		<name>Beauty</name>
+		<icon>https://github.com/noachic/test/raw/master/src/asset/images/category/beauty.png</icon>
+	</category>
+	<category>
+		<categoryId>10</categoryId>
+		<name>Travel</name>
+		<icon>https://github.com/noachic/test/raw/master/src/asset/images/category/travel.png</icon>
+	</category>
 </root>

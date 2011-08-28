@@ -9,18 +9,12 @@
 						>
 
 	<fx:Declarations>
-		<fx:Number id="top">90</fx:Number>
-		<fx:Number id="right">400</fx:Number>
-
-
 		<mx:ListCollectionView id="merchantList" />
 	</fx:Declarations>
 
 	<fx:Script>
 		<![CDATA[
 			import com.cp.event.ui.MerchantListEvent;
-
-			import mx.core.UIComponent;
 
 			public var dispatch:Function;
 
@@ -36,26 +30,25 @@
 		]]>
 	</fx:Script>
 
-	<s:Group width="{UIComponent(parent).width}"
-			 height="{UIComponent(parent).height}"
+	<s:Group x="{mainView.x}"
+			 y="{mainView.y}"
+			 width="{mainView.width}"
+			 height="{mainView.height}"
 			 >
-		<popup:ModalLayer height="1000"
-						  bottom="0"
-						  />
+		<popup:ModalLayer />
 
 		<merchant:MerchantList id="content"
-							   left="90"
-							   right="{right}"
-							   top="{top}"
-							   bottom="80"
+							   width="800"
+							   height="600"
+							   left="10"
+							   top="90"
 							   merchantList="{merchantList}"
 							   selectMerchant="dispatch(event)"
 							   />
 
-		<common:PopupCloseButton horizontalCenter="{UIComponent(parent).width/2 - right}"
-								 verticalCenter="{-UIComponent(parent).height/2 + top}"
+		<common:PopupCloseButton horizontalCenter="{content.width + content.x - mainView.width / 2}"
+								 verticalCenter="{content.y - mainView.height / 2}"
 								 touchTap="open = false"
 								 />
-
 	</s:Group>
 </popup:PopUpWrapperBase>
