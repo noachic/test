@@ -140,14 +140,16 @@
 						 backgroundColor="#FFFFFF"
 						 source="https://github.com/noachic/test/raw/master/src/asset/images/coupon/{coupon.merchantId}/{coupon.offerImage}"
 						 contentLoader="{imageCache.productImageCache}"
+						 contentLoaderGrouping="{ImageCache.VIEW_PRIORITY}"
 						 smooth="true"
+						 visible="{!coupon.showDescription}"
 						 />
 
 				<s:SkinnableContainer id="description"
 									  width="100%"
 									  height="100%"
 									  styleName="graphic scale fillGrey3 maskSmallRound"
-									  visible="false"
+									  visible="{coupon.showDescription}"
 									  >
 					<s:layout>
 						<s:VerticalLayout paddingBottom="15"
@@ -186,6 +188,7 @@
 				<s:BitmapImage maxWidth="80"
 							   source="https://github.com/noachic/test/raw/master/src/asset/images/coupon/{merchant.merchantId}/{merchant.logo}"
 							   contentLoader="{imageCache.merchantLogoCache}"
+							   contentLoaderGrouping="{ImageCache.VIEW_PRIORITY}"
 							   fillMode="scale"
 							   scaleMode="letterbox"
 							   >

@@ -4,9 +4,13 @@ package com.cp.model.common
 
 	public class ImageCache
 	{
+		public static const VIEW_PRIORITY:String = "viewLevelPriority";
+
 		private static const ProductImageCache:ContentCache = initProductImageCache();
 
 		private static const MerchantLogoCache:ContentCache = initMerchantLogoCache();
+
+		private static const CategoryImageCache:ContentCache = initCategoryImageCache();
 
 		private static function initProductImageCache():ContentCache
 		{
@@ -22,8 +26,17 @@ package com.cp.model.common
 			return cc;
 		}
 
+		private static function initCategoryImageCache():ContentCache
+		{
+			const cc:ContentCache = new ContentCache();
+			cc.maxCacheEntries = 99;
+			return cc;
+		}
+
 		public const productImageCache:ContentCache = ProductImageCache;
 
 		public const merchantLogoCache:ContentCache = MerchantLogoCache;
+
+		public const categoryImageCache:ContentCache = CategoryImageCache;
 	}
 }

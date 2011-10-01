@@ -6,23 +6,18 @@
 	<fx:Script>
 		<![CDATA[
 			import com.adobe.cairngorm.navigation.NavigationEvent;
-			import com.cp.view.*;
-			import com.cp.view.category.CategoryPopup;
-			import com.cp.view.common.MainHeader;
-			import com.cp.view.coupon.PrintingPopup;
-			import com.cp.view.merchant.MerchantPopup;
 		]]>
 	</fx:Script>
 
 	<fx:Declarations>
 
-		<View type="{MainView}">
+		<View type="com.cp.view.MainView">
 			<cairngorm:Waypoint name="view"
 								mode="states"
 								/>
 		</View>
 
-		<View type="{MainHeader}">
+		<View type="com.cp.view.common.MainHeader">
 			<Subscribe objectId="currentCategory"
 					   property="currentCategory"
 					   />
@@ -33,12 +28,13 @@
 				<names>
 					<fx:String>showCategoryList</fx:String>
 					<fx:String>showMerchantList</fx:String>
+					<fx:String>showHelp</fx:String>
 					<fx:String>{NavigationEvent.NAVIGATE_TO}</fx:String>
 				</names>
 			</ManagedEvents>
 		</View>
 
-		<View type="{HomeView}">
+		<View type="com.cp.view.HomeView">
 			<Subscribe objectId="categoryList"
 					   property="categoryList"
 					   />
@@ -50,7 +46,7 @@
 					   />
 		</View>
 
-		<View type="{CouponView}">
+		<View type="com.cp.view.CouponView">
 			<Subscribe objectId="filteredCouponList"
 					   property="couponList"
 					   />
@@ -61,7 +57,7 @@
 			</ManagedEvents>
 		</View>
 
-		<Object type="{CategoryPopup}">
+		<Object type="com.cp.view.category.CategoryPopup">
 			<MessageHandler method="show"
 							order="1"
 							selector="showCategoryList"
@@ -78,7 +74,7 @@
 					   />
 		</Object>
 
-		<Object type="{MerchantPopup}">
+		<Object type="com.cp.view.merchant.MerchantPopup">
 			<MessageHandler method="show"
 							order="1"
 							selector="showMerchantList"
@@ -95,7 +91,7 @@
 					   />
 		</Object>
 
-		<Object type="{PrintingPopup}">
+		<Object type="com.cp.view.coupon.PrintingPopup">
 			<MessageHandler method="show"
 							selector="startPrint"
 							type="com.cp.event.ui.PrintCouponEvent"
@@ -103,6 +99,18 @@
 			<MessageHandler method="hide"
 							selector="completePrint"
 							type="com.cp.event.ui.PrintCouponEvent"
+							/>
+			<MessageDispatcher property="dispatch" />
+		</Object>
+
+		<Object type="com.cp.view.help.HelpPopup">
+			<MessageHandler method="show"
+							selector="showHelp"
+							type="com.cp.event.ui.HelpEvent"
+							/>
+			<MessageHandler method="hide"
+							selector="hideHelp"
+							type="com.cp.event.ui.HelpEvent"
 							/>
 			<MessageDispatcher property="dispatch" />
 		</Object>

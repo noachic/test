@@ -7,8 +7,8 @@
 	</category>
 	<category>
 		<categoryId>2</categoryId>
-		<name>Pets</name>
-		<icon>https://github.com/noachic/test/raw/master/src/asset/images/category/pets.png</icon>
+		<name>Entertainment</name>
+		<icon>https://github.com/noachic/test/raw/master/src/asset/images/category/entertainment.png</icon>
 	</category>
 	<category>
 		<categoryId>3</categoryId>
@@ -17,8 +17,8 @@
 	</category>
 	<category>
 		<categoryId>4</categoryId>
-		<name>Entertainment</name>
-		<icon>https://github.com/noachic/test/raw/master/src/asset/images/category/entertainment.png</icon>
+		<name>Pets</name>
+		<icon>https://github.com/noachic/test/raw/master/src/asset/images/category/pets.png</icon>
 	</category>
 	<category>
 		<categoryId>5</categoryId>

@@ -23,7 +23,7 @@
 			  paddingTop="10"
 			  gap="10"
 			  >
-		<common:MainHeader />
+		<common:MainHeader width="100%" />
 
 		<s:HGroup width="100%"
 				  height="100%"

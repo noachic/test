@@ -25,7 +25,7 @@
 				 />
 
 	<view:MainView id="mainView"
-				   width="100%"
+				   width="1200"
 				   height="820"
 				   bottom="0"
 				   />

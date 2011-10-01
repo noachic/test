@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<popup:PopUpWrapperBase xmlns:fx="http://ns.adobe.com/mxml/2009"
+						xmlns:popup="com.cp.component.*"
+						xmlns:s="library://ns.adobe.com/flex/spark"
+						xmlns:common="com.cp.component.common.*"
+						xmlns:merchant="com.cp.view.merchant.*"
+						xmlns:mx="library://ns.adobe.com/flex/mx"
+						xmlns:help="com.cp.view.help.*"
+						center="false"
+						>
+
+	<fx:Script>
+		<![CDATA[
+			import com.cp.event.ui.HelpEvent;
+
+			public var dispatch:Function;
+
+			public function show(event:HelpEvent):void
+			{
+				open = true;
+			}
+
+			public function hide(event:HelpEvent):void
+			{
+				open = false;
+			}
+		]]>
+	</fx:Script>
+
+	<s:Group x="{mainView.x}"
+			 y="{mainView.y}"
+			 width="{mainView.width}"
+			 height="{mainView.height}"
+			 >
+		<popup:ModalLayer />
+
+		<help:HelpView id="view"
+					   width="100%"
+					   height="100%"
+					   />
+
+		<common:PopupCloseButton horizontalCenter="{view.content.width + view.content.x - mainView.width / 2}"
+								 verticalCenter="{view.content.y - mainView.height / 2}"
+								 touchTap="open = false"
+								 />
+	</s:Group>
+</popup:PopUpWrapperBase>

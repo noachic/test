@@ -22,6 +22,12 @@
 				<fx:Object label="resource.swf"
 						   source="@Embed('/asset/resource.swf')"
 						   />
+				<fx:Object label="ui_resource.swf"
+						   source="@Embed('/asset/ui_resource.swf')"
+						   />
+				<fx:Object label="panel_resource.swf"
+						   source="@Embed('/asset/panel_resource.swf')"
+						   />
 			</s:ArrayCollection>
 		</s:dataProvider>
 	</s:ComboBox>

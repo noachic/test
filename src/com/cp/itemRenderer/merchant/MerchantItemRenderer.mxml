@@ -2,6 +2,7 @@
 <s:ItemRenderer xmlns:fx="http://ns.adobe.com/mxml/2009"
 				xmlns:s="library://ns.adobe.com/flex/spark"
 				xmlns:merchant="com.cp.model.merchant.*"
+				xmlns:component="com.cp.component.*"
 				autoDrawBackground="false"
 				touchTap="dispatchEvent(MerchantListEvent.selectMerchant(merchant))"
 				>
@@ -31,16 +32,23 @@
 		</s:filters>
 	</s:BitmapImage>
 
-	<s:BitmapImage id="count"
-				   right="0"
-				   source="@Embed('/asset/resource.swf#gradientBlackCircle')"
-				   >
-		<s:filters>
-			<s:DropShadowFilter blurX="20"
-								blurY="20"
-								distance="0"
-								/>
-		</s:filters>
-	</s:BitmapImage>
+	<s:Group right="0">
+		<s:BitmapImage id="count"
+					   right="0"
+					   source="@Embed('/asset/resource.swf#gradientBlackCircle')"
+					   >
+			<s:filters>
+				<s:DropShadowFilter blurX="20"
+									blurY="20"
+									distance="0"
+									/>
+			</s:filters>
+		</s:BitmapImage>
+		<component:DropShadowLabel horizontalCenter="0"
+								   verticalCenter="0"
+								   styleName="h4 white darkShadow"
+								   text="{merchant.coupons.length}"
+								   />
+	</s:Group>
 
 </s:ItemRenderer>

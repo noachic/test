@@ -16,6 +16,7 @@
 		<![CDATA[
 			import com.adobe.cairngorm.navigation.NavigationEvent;
 			import com.cp.event.ui.CategoryListEvent;
+			import com.cp.event.ui.HelpEvent;
 			import com.cp.event.ui.MerchantListEvent;
 		]]>
 	</fx:Script>
@@ -56,5 +57,16 @@
 								visible="{currentCategory != null}"
 								/>
 	</s:SkinnableContainer>
+
+	<s:Rect width="100%" />
+
+	<s:Group touchTap="dispatchEvent(HelpEvent.showHelp())">
+		<s:BitmapImage source="@Embed('/asset/resource.swf#helpButtonBlack')" />
+		<component:DropShadowLabel horizontalCenter="0"
+								   verticalCenter="0"
+								   styleName="h1 white darkShadow"
+								   text="?"
+								   />
+	</s:Group>
 
 </s:HGroup>

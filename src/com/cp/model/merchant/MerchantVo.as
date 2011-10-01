@@ -5,6 +5,8 @@ package com.cp.model.merchant
 
 	import flash.events.EventDispatcher;
 
+	import mx.collections.ArrayCollection;
+
 	[Bindable]
 	public class MerchantVo extends EventDispatcher implements IValueObject
 	{
@@ -21,6 +23,8 @@ package com.cp.model.merchant
 
 		[XPath("categoryId")]
 		public var categoryId:Number;
+
+		public var coupons:ArrayCollection = new ArrayCollection();
 
 
 		public static function makePrimaryKey(merchantId:Number):Object

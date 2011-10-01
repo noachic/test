@@ -4,6 +4,7 @@
 				xmlns:mx="library://ns.adobe.com/flex/mx"
 				xmlns:category="com.cp.model.category.*"
 				xmlns:component="com.cp.component.*"
+				xmlns:common="com.cp.model.common.*"
 				autoDrawBackground="false"
 				touchTap="dispatchEvent(CategoryListEvent.selectCategory(category))"
 				>
@@ -15,6 +16,8 @@
 
 	<fx:Declarations>
 		<category:CategoryVo id="category" />
+
+		<common:ImageCache id="imageCache" />
 	</fx:Declarations>
 
 	<fx:Binding source="data as CategoryVo"
@@ -43,6 +46,8 @@
 					   scaleX="0.8"
 					   scaleY="0.8"
 					   source="{category.icon}"
+					   contentLoader="{imageCache.categoryImageCache}"
+					   contentLoaderGrouping="{ImageCache.VIEW_PRIORITY}"
 					   smooth="true"
 					   />
 		<s:filters>
