@@ -12,6 +12,8 @@ package com.cp.model.common
 
 		private static const CategoryImageCache:ContentCache = initCategoryImageCache();
 
+		private static const AdImageCache:ContentCache = initAdsImageCache();
+
 		private static function initProductImageCache():ContentCache
 		{
 			const cc:ContentCache = new ContentCache();
@@ -33,10 +35,19 @@ package com.cp.model.common
 			return cc;
 		}
 
+		private static function initAdsImageCache():ContentCache
+		{
+			const cc:ContentCache = new ContentCache();
+			cc.maxCacheEntries = 99;
+			return cc;
+		}
+
 		public const productImageCache:ContentCache = ProductImageCache;
 
 		public const merchantLogoCache:ContentCache = MerchantLogoCache;
 
 		public const categoryImageCache:ContentCache = CategoryImageCache;
+
+		public const adImageCache:ContentCache = AdImageCache;
 	}
 }

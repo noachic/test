@@ -22,9 +22,9 @@
 		<s:State name="v3" />
 	</s:states>
 
-	<s:Group width="300"
+	<s:Group width="280"
 			 height="540"
-			 left="800"
+			 left="790"
 			 top="150"
 			 >
 		<s:BitmapImage width="100%"
@@ -38,9 +38,9 @@
 			 height="100%"
 			 >
 		<s:Group id="highlightBackground"
-				 width="300"
+				 width="280"
 				 height="180"
-				 left="800"
+				 left="790"
 				 top.v1="150"
 				 top.v2="330"
 				 top.v3="510"
@@ -53,7 +53,7 @@
 		</s:Group>
 
 		<s:Group id="content"
-				 width="800"
+				 width="790"
 				 height="600"
 				 left="20"
 				 top="90"
@@ -81,9 +81,9 @@
 		</s:filters>
 	</s:Group>
 
-	<s:VGroup width="300"
+	<s:VGroup width="280"
 			  height="540"
-			  left="800"
+			  left="790"
 			  top="150"
 			  horizontalAlign="right"
 			  paddingBottom="10"
@@ -91,15 +91,15 @@
 			  paddingTop="10"
 			  gap="20"
 			  >
-		<s:BorderContainer width="260"
+		<s:BorderContainer width="240"
 						   height="160"
 						   click="currentState = 'v1'"
 						   />
-		<s:BorderContainer width="260"
+		<s:BorderContainer width="240"
 						   height="160"
 						   click="currentState = 'v2'"
 						   />
-		<s:BorderContainer width="260"
+		<s:BorderContainer width="240"
 						   height="160"
 						   click="currentState = 'v3'"
 						   />

@@ -45,17 +45,17 @@
 		]]>
 	</fx:Script>
 
-	<s:Group width="{UIComponent(parent).width}"
-			 height="{UIComponent(parent).height}"
+	<s:Group x="{mainView.x}"
+			 y="{mainView.y}"
+			 width="{mainView.width}"
+			 height="{mainView.height}"
 			 >
-		<popup:ModalLayer height="1000"
-						  bottom="0"
-						  />
+		<popup:ModalLayer />
 
-		<s:SkinnableContainer left="90"
-							  right="{right}"
-							  top="{top}"
-							  bottom="80"
+		<s:SkinnableContainer width="800"
+							  height="600"
+							  left="10"
+							  top="90"
 							  styleName="graphic scale fillGrey3 maskBottom"
 							  >
 			<s:BitmapImage width="100%"

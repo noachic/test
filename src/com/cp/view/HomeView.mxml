@@ -1,28 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<s:HGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
-		  xmlns:s="library://ns.adobe.com/flex/spark"
-		  xmlns:mx="library://ns.adobe.com/flex/mx"
-		  >
+<s:SkinnableContainer xmlns:fx="http://ns.adobe.com/mxml/2009"
+					  xmlns:s="library://ns.adobe.com/flex/spark"
+					  xmlns:mx="library://ns.adobe.com/flex/mx"
+					  xmlns:layout="com.cp.layout.*"
+					  xmlns:common="com.cp.model.common.*"
+					  styleName="graphic scale whiteBackground2"
+					  >
 	<fx:Declarations>
 		<mx:ListCollectionView id="categoryList" />
 		<mx:ListCollectionView id="merchantList" />
 		<mx:ListCollectionView id="couponList" />
+
+		<common:ImageCache id="imageCache" />
 	</fx:Declarations>
 
-	<s:List width="100%"
+	<s:List id="ads"
+			width="100%"
 			height="100%"
-			dataProvider="{categoryList}"
-			/>
+			selectedIndex="2"
+			>
+		<s:layout>
+			<layout:CoverflowLayout selectedIndex="{ ads.selectedIndex }"
+									depthDistance="1"
+									elementRotation="-45"
+									focalLength="300"
+									horizontalDistance="100"
+									perspectiveProjectionX="-1"
+									perspectiveProjectionY="-1"
+									selectedItemProximity="30"
+									/>
+		</s:layout>
 
-	<s:List width="100%"
-			height="100%"
-			dataProvider="{merchantList}"
-			/>
+		<s:dataProvider>
+			<s:ArrayCollection id="adsImage">
+				<fx:String>https://github.com/noachic/test/raw/master/src/asset/images/coupon/0/advertiser_01.png</fx:String>
+				<fx:String>https://github.com/noachic/test/raw/master/src/asset/images/coupon/0/advertiser_02.png</fx:String>
+				<fx:String>https://github.com/noachic/test/raw/master/src/asset/images/coupon/0/advertiser_03.png</fx:String>
+				<fx:String>https://github.com/noachic/test/raw/master/src/asset/images/coupon/0/advertiser_04.png</fx:String>
+				<fx:String>https://github.com/noachic/test/raw/master/src/asset/images/coupon/0/advertiser_05.png</fx:String>
+				<fx:String>https://github.com/noachic/test/raw/master/src/asset/images/coupon/0/advertiser_06.png</fx:String>
+			</s:ArrayCollection>
+		</s:dataProvider>
 
-	<s:List width="100%"
-			height="100%"
-			dataProvider="{couponList}"
-			/>
+		<s:itemRenderer>
+			<fx:Component>
+				<s:ItemRenderer autoDrawBackground="false">
+					<s:Image width="400"
+							 source="{data}"
+							 contentLoader="{outerDocument.imageCache.adImageCache}"
+							 scaleMode="letterbox"
+							 />
+				</s:ItemRenderer>
+			</fx:Component>
+		</s:itemRenderer>
+	</s:List>
 
-	<s:TextInput text="{couponList.length}" />
-</s:HGroup>
+	<s:filters>
+		<s:DropShadowFilter blurX="20"
+							blurY="20"
+							inner="true"
+							/>
+	</s:filters>
+</s:SkinnableContainer>
